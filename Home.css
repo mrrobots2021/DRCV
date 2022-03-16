@@ -1,0 +1,113 @@
+ul {
+    display:flex;
+    align-items: stretch; /* Default */
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(7,38,100);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    max-height: 50px;
+
+  }
+
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:20px;
+  }
+
+ 
+  a:link {
+    color: white;
+  }
+
+  a:visited{
+    color: wheat;
+  }
+
+  
+  .active {
+    background-color: #2f302f;
+  }
+
+
+  .logo img{
+    width:80px;
+    height:40px;
+    padding: none;
+    margin:none;
+  }
+
+.slogan {
+    display:flex;
+    border: 2px solid black;
+    background-image: url("FireFighter1.jpg");
+    height: 350px;
+    background-position: center;
+    z-index:-1;
+    justify-content:center;
+    align-items: center;
+}
+
+.slogan-txt {
+  margin: 30px;
+  background-color: green;
+  border: 1px solid black;
+  opacity:0.6;
+}
+
+.slogan-txt p {
+  margin: 5%;
+  font-weight: bold;
+  color: green;
+  font-family: Arial, Helvetica;
+  font-size: 50px;
+}
+
+#events {
+  margin:10px 0px 10px 0px;
+  display:flex;
+  color:white;
+  background-color: rgb(7,38,100);
+}
+
+.events-txt {
+flex: 0 1 50%;
+margin: 10px;
+font-size: 20px;
+text-align:center; 
+}
+
+.events-link{
+flex: 0 2 50%;
+margin: 10px;
+font-size: 20px;
+color:white;
+text-align: center; 
+}
+
+
+li a:hover {
+  background-color: #111;
+  
+}
+
+
+
+#mission{
+  text-align: center;
+  align-items: center;
+
+}
+
+.summaryBox{
+  font-size: 25px;
+  font-family: "Times New Roman", "Arial", "Courier New";
+}
