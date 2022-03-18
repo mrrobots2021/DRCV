@@ -10,7 +10,6 @@ ul {
   position: sticky;
   top: 0;
   max-height: 50px;
-  
 }
 
 li a {
@@ -22,11 +21,15 @@ li a {
   font-size:20px;
 }
 
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*       elements ▲ ▲ ▲          classes ▼ ▼ ▼
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
 .active {
   background-color: #2f302f;
 }
 
-.logo img{
+.logo img {
   width:80px;
   height:40px;
   padding: none;
@@ -52,7 +55,6 @@ li a {
   background-color: rgba(252, 250, 247, 0.507);
   border-radius: 5px 5px 5px 5px;
   opacity:0.8;
-   
 }
 
 .events-txt {
@@ -70,29 +72,7 @@ li a {
   text-align: center; 
 }
 
-a:link {
-  color: white;
-}
-
-a:visited{
-  color: wheat;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
-
-#events {
-  margin:10px 0px 10px 0px;
-  display:flex;
-  color:white;
-  background-color: rgb(7,38,100);
-}
-
-
-
-.mission{
+.mission {
   color:white;
   text-align: center;
   align-items: center;
@@ -100,79 +80,52 @@ li a:hover {
   border-radius: 15px ;
   margin: 0px 200px 0px 200px;
   padding:20px;
-  
 }
-
-#Our-Mission{
-  font-size:25px;
-  text-decoration: underline;
-  padding: 0px 0px 15px 0px;
-}
-
-#summaryBox{
-  font-size: 15px;
-  font-family: "Times New Roman", "Arial", "Courier New";
-  color:white;
- 
-  
-}
-/*Dont touch*/
-
-
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
   color: rgba(0, 0, 0, 0.699);
-
   padding: 10px;
   height:40%;
 }
 
-.grid-container div{
+.grid-container div {
   font-size: 20px;
   
 }
 
-.grid-imgs img{
+.grid-imgs img {
  max-width:100px;
  max-height:100px;
 }
 
-.item1{
-  
+.item1 {
   display:grid table-column;
   text-align: center;
   grid-template-columns: auto auto;
 }
 
-.item2{
-  
+.item2 {
   display:grid table-column;
   text-align: center;
   grid-template-columns: auto auto;
 }
 
-.item3{
-  
+.item3 {
   display:grid table-column;
   text-align: center;
   grid-template-columns: auto auto;
 }
 
-.item4{
-
+.item4 {
   display:grid table-column;
   text-align: center;
   grid-template-columns: auto auto;
 }
-
-
-
 
 /*Dont touch*/
-
 /* Dropdown container - needed to position the dropdown content */
 .dropdown {
   float: left;
@@ -211,6 +164,36 @@ li a:hover {
   text-align: left;
 }
 
+.video-strip {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  text-align: center;
+  background-color: rgba(199, 199, 199, 0.658);
+}
+
+.video-description {
+  padding: 10px;
+  color: black;
+}
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*       classes ▲ ▲ ▲           pseudoclasses ▼ ▼ ▼
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: wheat;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
   background-color: #555;
@@ -228,10 +211,36 @@ li a:hover {
   display: block;
 }
 
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*       pseudoclasses ▲ ▲ ▲           id ▼ ▼ ▼
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
 
+#events {
+  margin:10px 0px 10px 0px;
+  display:flex;
+  color:white;
+  background-color: rgb(7,38,100);
+}
 
+#Our-Mission {
+  font-size:25px;
+  text-decoration: underline;
+  padding: 0px 0px 15px 0px;
+}
 
+#summaryBox {
+  font-size: 15px;
+  font-family: "Times New Roman", "Arial", "Courier New";
+  color:white;
+} /*Dont touch*/
 
+#description-header {
+  font-weight:bolder;
+  font-size: 40px;
+  opacity: 0.8;
+}
 
-
-
+#description-text {
+  font-size: 20px;
+  opacity: 0.8;
+}
