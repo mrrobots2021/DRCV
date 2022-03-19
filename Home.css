@@ -1,3 +1,7 @@
+*{
+  font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
 ul {
   display:flex;
   align-items: stretch; /* Default */
@@ -73,13 +77,21 @@ li a {
 }
 
 .mission {
+  box-sizing: border-box;
   color:white;
-  text-align: center;
   align-items: center;
   background-color: rgb(7,38,100);
   border-radius: 15px ;
-  margin: 0px 200px 0px 200px;
-  padding:20px;
+  margin: 0.5rem;
+  padding:2rem;
+  text-align: center;
+}
+.mission p{
+  font-size: large;
+}
+.mission h2{
+  font-size: x-large;
+ 
 }
 
 /*Main section 4x4 grid.*/
@@ -90,7 +102,6 @@ li a {
   color: rgba(0, 0, 0, 0.699);
   padding: 10px;
   box-sizing: border-box;
-  font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .card {
@@ -100,19 +111,19 @@ li a {
   text-align: center;
   font-size: larger;
   border-radius:5px;
-  
-
 }
+
 .card:hover{
   background-color: rgb(28, 60, 122);
   color:white;
   /*change images to white*/
 }
+
 .grid-imgs {
   box-sizing: content-box;
   min-block-size: 20%;
   max-block-size: 30%;
-
+  vertical-align: baseline;
   justify-content: center;
   margin: 0.5rem;
 }
@@ -127,6 +138,7 @@ li a {
     grid-template-columns: auto auto;
   }
 }
+
 @media screen and (max-width:40rem) {
   .grid-container {
     grid-template-columns: auto;
@@ -237,11 +249,7 @@ li a:hover {
   background-color: rgb(7,38,100);
 }
 
-#Our-Mission {
-  font-size:25px;
-  text-decoration: underline;
-  padding: 0px 0px 15px 0px;
-}
+
 
 #summaryBox {
   font-size: 15px;
