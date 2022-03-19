@@ -82,50 +82,65 @@ li a {
   padding:20px;
 }
 
+/*Main section 4x4 grid.*/
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
   color: rgba(0, 0, 0, 0.699);
   padding: 10px;
-  height:40%;
+  box-sizing: border-box;
+  font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-.grid-container div {
-  font-size: 20px;
+.card {
+  box-sizing: content-box;
+  background-color: silver;
+  padding: 1rem;
+  text-align: center;
+  font-size: larger;
+  border-radius:5px;
+  
+
+}
+.card:hover{
+  background-color: rgb(28, 60, 122);
+  color:white;
+  /*change images to white*/
+}
+.grid-imgs {
+  box-sizing: content-box;
+  min-block-size: 20%;
+  max-block-size: 30%;
+
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.card h4{
+  font-size: larger;
   
 }
 
-.grid-imgs img {
- max-width:100px;
- max-height:100px;
+@media screen and (max-width:50rem) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width:40rem) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
 }
 
-.item1 {
-  display:grid table-column;
-  text-align: center;
-  grid-template-columns: auto auto;
-}
-
+/*Dead code here just in case
 .item2 {
   display:grid table-column;
   text-align: center;
   grid-template-columns: auto auto;
 }
+*/
 
-.item3 {
-  display:grid table-column;
-  text-align: center;
-  grid-template-columns: auto auto;
-}
-
-.item4 {
-  display:grid table-column;
-  text-align: center;
-  grid-template-columns: auto auto;
-}
-
-/*Dont touch*/
 /* Dropdown container - needed to position the dropdown content */
 .dropdown {
   float: left;
@@ -243,4 +258,21 @@ li a:hover {
 #description-text {
   font-size: 20px;
   opacity: 0.8;
+}
+
+
+.footer {
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
+  color:white;
+  background-color: rgb(7,38,100);
+  
+}
+@media screen and (max-width:40rem){
+  .footer{
+    flex-direction: column;
+  }
 }
