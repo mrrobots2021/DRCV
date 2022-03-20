@@ -89,6 +89,9 @@ li a {
   background-color: #2f302f;
 }
 
+h2{
+  font-size: x-large;
+}
 
 
 /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
@@ -107,7 +110,8 @@ li a {
 .slogan {
   display:flex;
   border: 2px solid black;
-  background-image: url("FireFighter1.jpg");
+  background-image: url("firefighter.jpg");
+  background-size: cover;
   height: 350px;
   background-position: center;
   justify-content:center;
@@ -117,7 +121,6 @@ li a {
 
 .slogan-text {
   font-weight:bolder;
-  
   color:black;
   font-size: 3vw;
   background-color: rgba(252, 250, 247, 0.507);
@@ -153,10 +156,7 @@ li a {
 .mission p{
   font-size: large;
 }
-.mission h2{
-  font-size: x-large;
- 
-}
+
 
 /*Main section 4x4 grid.*/
 .grid-container {
@@ -185,8 +185,6 @@ li a {
 
 .grid-imgs {
   box-sizing: content-box;
-  min-block-size: 20%;
-  max-block-size: 30%;
   vertical-align: baseline;
   justify-content: center;
   margin: 0.5rem;
@@ -209,18 +207,12 @@ li a {
   }
 }
 
-/*Dead code here just in case
-.item2 {
-  display:grid table-column;
-  text-align: center;
-  grid-template-columns: auto auto;
-}
-*/
 
 /* Dropdown container - needed to position the dropdown content */
 .dropdown {
   float: left;
   overflow: hidden;
+  
 }
 
 /* Style the dropdown button to fit inside the topnav */
@@ -240,6 +232,7 @@ li a {
   display: none;
   position: absolute;
   background-color: #ffffff;
+  color:#000000;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -259,7 +252,10 @@ li a {
   margin: 10px;
   display: flex;
   justify-content: space-between;
-  border: 2px solid black;
+  justify-items: center;
+  align-items:center;
+  border-radius: 15px ;
+  overflow: hidden;
   text-align: center;
   background-color: rgba(199, 199, 199, 0.658);
 }
@@ -267,6 +263,19 @@ li a {
 .video-description {
   padding: 10px;
   color: black;
+}
+
+@media screen and (max-width: 40rem) {
+  .video-strip {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items:center;
+
+  }
+  .video-strip iframe{
+    width: auto;
+  }
 }
 
 /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
@@ -284,6 +293,7 @@ a:visited {
 li a:hover {
   background-color: #111;
 }
+
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
@@ -311,25 +321,6 @@ li a:hover {
   display:flex;
   color:white;
   background-color: rgb(7,38,100);
-}
-
-
-
-#summaryBox {
-  font-size: 15px;
-  font-family: "Times New Roman", "Arial", "Courier New";
-  color:white;
-} /*Dont touch*/
-
-#description-header {
-  font-weight:bolder;
-  font-size: 40px;
-  opacity: 0.8;
-}
-
-#description-text {
-  font-size: 20px;
-  opacity: 0.8;
 }
 
 
