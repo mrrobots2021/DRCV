@@ -110,7 +110,7 @@ h2{
 .slogan {
   display:flex;
   border: 2px solid black;
-  background-image: url("firefighter.jpg");
+  background-image: url("pictures\FireFighter1.jpg");
   background-size: cover;
   height: 350px;
   background-position: center;
