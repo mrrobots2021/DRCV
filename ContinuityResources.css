@@ -2,6 +2,10 @@
 /*       elements ▼ ▼ ▼
 /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
 
+* {
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 body {
     background-color: rgb(252, 250, 246);
 }
@@ -28,6 +32,9 @@ li a {
 
 h1 {
     font-size: 42px;
+    background-color: rgb(252, 250, 246);
+    border: solid 2px rgb(7, 38, 100);
+    border-radius: 20%;
 }
 
 /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
@@ -40,7 +47,10 @@ h1 {
 }
 
 .header-box {
-    background-color: ghostwhite;
+    background-image: url("pictures/meeting.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
     border: solid 4px rgb(7, 38, 100);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 2%;
