@@ -1,114 +1,394 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us Page</title>
-	<link rel="stylesheet" href="AboutUs.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.nav-ul {
+    display:flex;
+    align-items: stretch; 
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7,38,100);
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    max-height: 4.3vw;
+  }
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:1.3vw;
+  }  
+  .topnav {
+      overflow: hidden;
+      background-color: rgb(7,38,100);
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      
+    }
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }   
+    .topnav a.active {
+      background-color: #000000;
+      color: white;
+    }   
+    .topnav .icon {
+      display: none;
+    }   
+  @media screen and (max-width: 1000px) {
+   .nav{
+     display:none;
+   }
+  }  
+  @media screen and (min-width: 1000px) {
+    .topnav{
+      display:none;
+    }
+  }  
+  @media screen and (max-width: 1000px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block; 
+    }
+     .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  .active {
+    background-color: #000000;
+   
+  }
+
+  .logo img {
+    width:5vw;
+    height:3vw;
+    padding: none;
+    margin:none;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 17px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(7,38,100);
+    color:#000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  a:link {
+    color: white;
+  }
+  
+  a:visited {
+    color: rgb(255, 255, 255);
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }  
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+
+
+  }
+  
+}
+</style>
 </head>
+    <body style="background-color: rgba(239, 245, 247, 0.185)">
 
-<body>
+        <div class="nav">
+            <ul class = "nav-ul">
+                <li><a>
+                    <div class="logo"><img src= "Pictures/drcvlogo.jpg" alt="Logo"></div>
+                </a></li>
+                <li><a>Disaster Ready Chippewa Valley</a></li>
+                
+                <li><a href="Home.html">Home</a></li>
+    
+                <div class="dropdown">
+                    <button class="dropbtn">About Us 
+                         <i class="fa fa-caret-down"></i>
+                    </button>
+                     <div class="dropdown-content">
+                        <a href="ContactUs.html">Contact Us</a>
+                        <a href="AboutUs.html">About Us</a>
+                    </div>
+                 </div> 
+    
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="DRCVMembership.html">DRCV Membership</a></li>
+           
+                
+                <div class="dropdown">
+                    <div class="active">
+                    <button class="dropbtn">Resources                      
+                         <i class="fa fa-caret-down"></i>                     
+                    </button>               
+                     <div class="dropdown-content">                
+                        <a href="KeyWebsites.html">Key Websites</a>
+                        <a href="EmailList.html">Email List</a>
+                        <a href="ContinuityPlanning.html">Continuity Planning</a>                   
+                    </div>
+                 </div> 
+                </div>
+    
+                <li><a href="More.html">More</a></li>
+            </ul>   
+        </div> 
+        <div class="topnav" id="myTopnav">
+            <a href="Home.html" class="active">Home</a>
+            <a href="AboutUs.html">Contact Us</a>
+            <a href="ContactUs.html">About Us</a>
+            <a href="DRVCMembership.html">Membership</a>
+            <a href="KeyWebsites.html">Key Websites</a>
+            <a href="EmailList.html">Email List</a>
+            <a href="ContinuityPlanning.html">Continuity Planning</a>
+    
+            <a href="More.html">More</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
 
-	<nav class="navbar background">
-		<ul class="nav-list">
-			<div class="logo"><img src="drcvlogo.jpg"></div>
-			<li><a href="Home.html" >Home</a></li>
-			<li><a href="#Food">Food</a></li>
-			<li><a href="#AboutUs">AboutUs</a></li>
-			<li><a href="#ContactUs">Contact Us</a></li>
-		</ul>
 
-		<div class="rightNav">
-			<input type="text" name="search" id="search">
-			<button class="btn btn-sm">Search</button>
-		</div>
-	</nav>
+<div class="about-section">
+  <h1 style="color: rgb(7,38,100);font-family:Open-Sans">About Us</h1>
+  <p style="font-family:Open-Sans;">Disaster Ready Chippewa Valley, Inc., is a tax exempt, non-profit organization formed exclusively for charitable and educational purposes as defined in Section 501(c)3 of the Internal Revenue Code.  Disaster Ready Chippewa Valley, Inc., was incorporated in the State of Wisconsin in April 2011.</p>
+  <p style="font-family:Open-Sans;"><b>Goal 1:</b> To sustain a strong, effective organization to guide, coordinate, and implement project activities.</p>
+  <p style="font-family:Open-Sans;"><b>Goal 2:</b> To increase private-sector awareness of disaster threats, provide businesses with the tools to mitigate their risks, and advocate for an efficient system of distributing goods, services, and other resources to the community and businesses in times of a disaster.</p>
+  <p style="font-family:Open-Sans;"><b>Goal 3:</b> Strengthen private-sector involvement and communication with government emergency planning and response entities.</p>
+  _____________________________________________________________________________________________________
+  <p style="font-family:Open-Sans;font-size: larger;"><b>Motto:</b> <i>If Chippewa Valley businesses are prepared for a disaster, then our communities are better prepared.</i></p>
+</div>
 
-	<section class="background firstsection">
-		<div class="box-main">
-			<div class="firstHalf">
-				<p class="text-big">About US</p>
+<h2 style="text-align:center;font-family:Open-Sans;color:rgb(7,38,100)">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="pictures\Bruce_King.jpg" alt="Bruce" style="width:40%">
+      <div class="container">
+        <h2 style="font-family: Open-Sans;">Bruce King</h2>
+        <p class="title">President</p>
+        <p>Governmental Affairs Director, REALTORS Association of Northwestern Wisconsin.</p>
+        <p>bruce@ranww.org</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 
-				<p class="text-small">
-					Here you will get to know the team
-					members of our company
-				</p>
-				<br>
-				<p class="center"><a href="#Order"
-					style="text-decoration:none;color:white;">
-					Below are the people who
-					works in our company</a>
-				</p>
-			</div>
-		</div>
-	</section>
+  <div class="column">
+    <div class="card">
+      <img src="pictures\Ben_Bella.jpg" alt="Ben" style="width:45%">
+      <div class="container">
+        <h2 style="font-family: Open-Sans;">Ben Bella</h2>
+        <p class="title">Vice President</p>
+        <p>Safety & Compliance Officer, Eau Claire Energy Cooperative</p>
+        <p>https://www.linkedin.com/in/ben-bella-43934648/</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="pictures\Adam_Bourget.jpg" alt="Adam" style="width:60%">
+      <div class="container">
+        <h2 style="font-family: Open-Sans;">Adam Bourget</h2>
+        <p class="title">Secretary</p>
+        <p> Environmental Engineering Specialist, Nestle Nutrition.</p>
+        <p>https://www.facebook.com/adam.bourget.3</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 
-	<section class="service">
-		<h1 class="h-primary center" style=
-			"margin-top:30px;text-align:center;">
-			Our Team
-		</h1>
-		
-		<div id="service">
-			<div class="box">
-				<img src=
-					"https://media.geeksforgeeks.org/wp-content/uploads/20201231132740/Capture.PNG"
-					alt="picture not displayed">
-				<br>
-				<p class="center">
-					<a href="#xyz"
-						style="text-decoration:none;color:black;
-						font-weight:bold;font-family: 'Langar', cursive;">
-						xyz
-					</a>
-				</p>
-				<br>
-				<p>CEO and the Founder</p>
-			</div>
+  <div class="column">
+    <div class="card">
+      <img src="pictures\Brian_Drollinger.jpg" alt="Brian" style="width:50%">
+      <div class="container">
+        <h2 style="font-family: Open-Sans;">Brian Drollinger</h2>
+        <p class="title">Treasurer</p>
+        <p>Director of Risk Management, Safety and Sustainability, University of Wisconsin-Eau Claire.</p>
+        <p>drollibk@uwec.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 
-			<div class="box">
-				<img src=
-					"https://media.geeksforgeeks.org/wp-content/uploads/20201231132740/Capture.PNG"
-					alt="picture not displayed">
-				<br>
-				<p class="center">
-					<a href="#abc"
-						style="text-decoration:none;color:black;
-						font-weight:bold;font-family: 'Langar', cursive;">
-						abc
-					</a>
-				</p>
-				<br>
-				<p>co-founder</p>
-				<br>
-				<p>You can contact him: -</p>
-				<p>Foodscalablility@gmail.com</p>
-			</div>
-		</div>
-	</section>
+  <div class="column">
+    <div class="card">
+      <img src="pictures\Chris_Straight.jpg" alt="Chris" style="width:45%">
+      <div class="container">
+        <h2 style="font-family: Open-Sans;">Chris Straight</h2>
+        <p class="title">Administrator</p>
+        <p>Senior Planner, West Central Wisconsin Regional Planning Commission.</p>
+        <p>chris@wcwrpc.org</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 
-	<section class="services">
-		<div id="services">
-			<div class="box">
-				<img src=
-					"https://media.geeksforgeeks.org/wp-content/uploads/20201231132740/Capture.PNG"
-					alt="picture not displayed">
-				<br>
-				<p class="center">
-					<a href="#xyz" style="text-decoration:none;
-						color:black;font-weight:bold;
-						font-family: 'Langar', cursive;">
-						asw
-					</a>
-				</p>
-				<br>	
-				<p>Food Manager of the company </p>
-			</div>
-		</div>
-	</section>
-	
+  <div class="column">
+    <div class="card">
+      <img src="pictures\Aimee_Nesseth.jpg" alt="Aimee" style="width:60%" style="height:20%">
+      <div class="container">
+        <h2 style="font-family: Open-Sans;">Aimee Wollman Nesseth</h2>
+        <p class="title">Coordinator</p>
+        <p>Coordinator, Northwest WI Healthcare Emergency Readiness Coalition.</p>
+        <p>coordinator@nwwiherc.org</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
-
 </html>
