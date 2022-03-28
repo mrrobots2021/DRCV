@@ -110,7 +110,7 @@ h2{
 .slogan {
   display:flex;
   border: 2px solid black;
-  background-image: url("pictures\FireFighter1.jpg");
+  background-image: url("pictures/FireFighter1.jpg");
   background-size: cover;
   height: 350px;
   background-position: center;
@@ -133,6 +133,21 @@ h2{
   margin: 10px;
   font-size: 2vw;
   text-align:center; 
+}
+#events {
+  margin:10px 0px 10px 0px;
+  display:flex;
+  color:white;
+  /*background-color: rgb(7,38,100);*/
+  overflow: hidden;
+  justify-content: center;
+}
+
+#events img{
+  object-fit:cover;
+  max-width: 90%;
+  display: block;
+  
 }
 
 .events-link {
@@ -311,17 +326,18 @@ li a:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.bi{
+  font-size:xxx-large;
+}
+#arrow{
+  font-size: large;
+}
 
 /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
 /*       pseudoclasses ▲ ▲ ▲           id ▼ ▼ ▼
 /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
 
-#events {
-  margin:10px 0px 10px 0px;
-  display:flex;
-  color:white;
-  background-color: rgb(7,38,100);
-}
+
 
 
 .footer {

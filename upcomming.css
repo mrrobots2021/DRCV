@@ -7,7 +7,7 @@ body {
   background-color: rgb(248,244,220);
 }
 
-.nav ul {
+.nav ul, .toes ul {
   display:flex;
   align-items: center; 
   justify-content: space-around;
@@ -18,7 +18,7 @@ body {
   max-height: 4.3vw;
 }
 
-.nav li a {
+.nav li a, .toes li {
   display: inline-block;
   color: white;
   text-align: center;
@@ -40,6 +40,39 @@ h1 {
 
 
 /*Boxes*/
+
+
+
+.flyer-txt {
+  flex: 0 1 50%;
+  margin: 10px;
+  font-size: 2vw;
+  text-align:center; 
+}
+.flyer{
+  margin:10px 0px 10px 0px;
+  display:flex;
+  color:white;
+  /*background-color: rgb(7,38,100);*/
+  overflow: hidden;
+  justify-content: center;
+}
+
+.flyer img{
+  object-fit:cover;
+  max-width: 90%;
+  display: block;
+  
+}
+
+.flyer-link {
+  flex: 0 2 50%;
+  margin: 10px;
+  font-size: 2vw;
+  color:blue;
+  text-align: center; 
+}
+
 .bi{
   font-size: larger;
 }
@@ -69,10 +102,7 @@ h1 {
 #agenda{
   grid-area: agenda;
 }
-.flex-flyer{
-  display: flex;
-  width: 100vw;
-}
+
 
 .flex-container {
   margin: 12px auto 0;
@@ -103,11 +133,11 @@ h1 {
 }
 
 .footer {
-  padding: 1.25rem 1.875rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 
+  display:flex;
+  align-items:center;
   justify-content: space-around;
+  flex-direction: row;
   text-align: center;
   color:white;
   background-color: rgb(7,38,100);
@@ -132,7 +162,7 @@ h1 {
     'agenda agenda agenda agenda';
   }
   .footer{
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
 
@@ -147,9 +177,7 @@ h1 {
     'rsvp rsvp '
     'agenda agenda';
   }
-  .footer{
-    grid-template-columns: 1fr;
-  }
+
 
 }
 

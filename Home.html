@@ -8,7 +8,8 @@
     <title>DRCV</title>
     <link rel="stylesheet" href="Home.css">
     <link rel="icon" href="drcvlogo.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"></head>
+
 </head>
 
 <body style="background-color: beige">
@@ -25,7 +26,7 @@
 
             <div class="dropdown">
                 <button class="dropbtn">About Us 
-                     <i class="fa fa-caret-down"></i>
+                     <i class="bi bi-chevron-down" id="arrow"></i>
                 </button>
                  <div class="dropdown-content">
                     <a href="ContactUs.html">Contact Us</a>
@@ -48,7 +49,7 @@
         <a href="Resources.html">Resources</a>
         <a href="More.html">More</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+            <i class="bi bi-list"></i>
         </a>
     </div>
       
@@ -71,6 +72,8 @@
     </div>
 
     <div id="events">
+        <a href="Upcomming.html"><img src= "pictures/fallSeminar.jpg" alt="Logo"></a>
+<!--
         <div class="events-txt">
             Upcoming Events
         </div>
@@ -78,13 +81,14 @@
         <div class="events-link">
             <a href="Upcomming.html"> Click here for Upcoming Events</a>
         </div>
+      -->
     </div>
     
     <div class="grid-container">
         <div class="card" id="about">
             
             <div class= "grid-imgs">
-                <img src= "pictures\home.png" alt="Logo">
+                <h4><i class="bi bi-house-door" aria-label="calendar"></i></h4>
             </div>
             <h4>What We Do</h4>
             <p>Learn about what we do, who we are, and our mission</p>
@@ -93,8 +97,7 @@
         <div class="card" id ="event">
 
             <div class= "grid-imgs">
-                <img src= "pictures\event.png" alt="Logo">
-                
+                <h4><i class="bi bi-calendar4-week" aria-label="calendar"></i></h4>
             </div>
             <h4>Workshops</h4>
             <p>Find out about upcomming events and browse past seminars</p>
@@ -102,7 +105,7 @@
 
         <div class="card" id="resources">
             <div class= "grid-imgs">
-                <img src= "pictures\about.png" alt="Logo">
+                <h4><i class="bi bi-flag" aria-label="calendar"></i></h4>
                 
             </div>
             <h4>Resources</h4>
@@ -111,7 +114,7 @@
 
         <div class="card" id="mail">
             <div class= "grid-imgs">
-                <img src= "pictures\email.png" alt="Logo">
+                <h4><i class="bi bi-envelope-paper" aria-label="calendar"></i></h4>
                 
             </div>
             <h4>Stay Informed</h4> 
@@ -139,8 +142,6 @@
     </div>
 
     <footer class="footer">
-        
-        <p>Icons from <a href="https://icons8.com/" target="_blank">Icons8</a></p>
         <p>Site Developed by:  Alex Kamke, Caden Joergens, Kaia Hansen, JJ Wertkin,  Spencer Keith</p>
         <p>report an issue on <a href="https://github.com/mrrobots2021/DRSV" target="_blank">github</a></p>
 
