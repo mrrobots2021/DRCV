@@ -198,6 +198,24 @@ h2{
   font-size: larger;
   border-radius:5px;
 }
+.card a:link {
+  color: rgba(0, 0, 0, 0.699);
+  text-decoration: none;
+}
+
+.card a:visited {
+  color: rgba(0, 0, 0, 0.699);
+  text-decoration: none;
+}
+.card a:active {
+  color: rgba(0, 0, 0, 0.699);
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: white;
+  text-decoration: none;
+}
 
 .card:hover{
   background-color: rgb(28, 60, 122);
