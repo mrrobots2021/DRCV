@@ -14,36 +14,66 @@
     <div class="nav">
         <ul>
             <li><a>
-                <img class="logo" src= "pictures/drcvlogo.jpg" alt="Logo">
+                <div class="logo"><img src= "pictures/drcvlogo.jpg" alt="Logo"></div>
             </a></li>
             <li><a>Disaster Ready Chippewa Valley</a></li>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+
+            <div class="dropdown">
+                <button class="dropbtn">About Us 
+                     <i class="bi bi-chevron-down" id="arrow"></i>
+                </button>
+                 <div class="dropdown-content">
+                    <a href="ContactUs.html">Contact Us</a>
+                    <a href="AboutUs.html">About Us</a>
+                </div>
+             </div> 
+
             <li><a href="ContactUs.html">Contact Us</a></li>
             <li><a href="DRCVMembership.html">DRCV Membership</a></li>
             <li><a href="Resources.html">Resources</a></li>
             <li><a href="More.html">More</a></li>
-        </ul>
+        </ul>   
+    </div> 
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="AboutUs.html">Contact Us</a>
+        <a href="ContactUs.html">About Us</a>
+        <a href="DRVCMembership.html">Membership</a>
+        <a href="Resources.html">Resources</a>
+        <a href="More.html">More</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="bi bi-list"></i>
+        </a>
     </div>
+      
+      
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
 
     <div class="header-box">
-        <h1 class="center-text" >Upcomming Events</h1>
+        <h1 class="center-text">Upcomming Events</h1>
     </div>
 
     <div class="flyer">
-        <img src= "pictures/fallSeminar.jpg" alt="Logo">
-<!--
-        <div class="events-txt">
-            Upcoming Events
-        </div>
-        <hr>
-        <div class="events-link">
-            <a href="Upcomming.html"> Click here for Upcoming Events</a>
+        <img src= "pictures/fallSeminar.jpg" alt="flyer">
+    <!--⚠️ UNCOMMENT WHEN NO EVENT
+        <div class="hiden-txt">
+            <a href="PastEvents.html">No Upcoming Events.</a>
         </div>
       -->
     </div>
 
-    <div class="flex-container">
+    <div class="grid-container">
         
         <div class="card" id="agenda">
             <h2><b>Agenda: Cybersecurity</b></h2>
@@ -62,7 +92,7 @@
         </div>
    
         <div class="card" id="when">
-            <h2><b><i class="bi bi-calendar2-check" aria-label="check calendar"></i></b> When</h2>
+            <h2><b><i class="bi bi-calendar3" aria-label="calendar"></i></b> When</h2>
             <hr/>
             <h3>December 8, 2021</h3>
             <h3>Registration is required by Decmber 3rd</h3>
@@ -83,16 +113,38 @@
         </div>
     
     </div>
-    <footer class="footer">
-        <ul>
-            <li class="toes"><a>
-                <img class="logo" src= "pictures/drcvlogo.jpg" alt="Logo">
-            </a></li>
-            <li class="toes">Site Developed by:  Alex Kamke, Caden Joergens, Kaia Hansen, JJ Wertkin,  Spencer Keith</li>
-            <li class="toes">report an issue on <a href="https://github.com/mrrobots2021/DRSV" target="_blank">github</a></li>
-        </ul>
+    <footer>
+        <!-- Footer main -->
+       
+        <div class="toes">
+            <h2 class="toe-tag">Developed By</h2>
+            <ul>
+              <li>Alex Kamke</li>
+              <li>Caden Joergens</li>
+              <li>Kaia Hansen</li>
+              <li>JJ Wertkin</li>
+              <li>Spencer Keith</li>
+            </ul>
+          </div>
+          <div class="toes">
+            <h2 class="toe-tag">Report an Issue</h2>
+            <p>report an issue on <a href="https://github.com/mrrobots2021/DRSV" target="_blank"> <i class="bi bi-github" aria-label="github"></i> github</a>
+        
+          </div>
+          <div class="toes">
+            <h2 class="toe-tag">Contact</h2>
+      
+            <ul>
+                <li>800 Wisconsin Street</li>
+                <li>Banbury Place, Bldg D2-401</li>
+                <li>Mail Box 9</li>
+                <li>Eau Claire, WI  54703-3606</li>
+                <li>Phone: 715.836.2918  ext. 16</li>
+                <li>Fax: 715.836.2886</li>
+            </ul>
+        </div> 
+       
     </footer>
 
 </body>
-
 </html>
