@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-color: rgb(248,244,220);
     display: flex;
@@ -15,12 +14,7 @@ body {
 h1 {
   font-size: 42px;
   background-color: rgb(252, 250, 246);
-  border: solid 2px rgb(7, 38, 100);
   border-radius: 20%;
-}
-
-.bi{
-  font-size: larger;
 }
 
 .tab {
@@ -103,8 +97,20 @@ h1 {
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgb(7,38,100);
-}  
+} 
+.card a{
+  color:mediumblue;
+}
+.card a:visited{
+  color:darkslateblue;
+} 
+.card a:hover{
+  color: blueviolet;
+}
 
+.card .bi{
+  font-size: larger;
+}
 
 /*Footer*/
 footer {
