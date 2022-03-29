@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -16,33 +17,11 @@ html {
   box-sizing: inherit;
 }
 
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
 .about-section {
   padding: 50px;
   text-align: center;
   background-color: white;
   color: black;
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 .title {
@@ -64,6 +43,77 @@ html {
 .button:hover {
   background-color: #555;
 }
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    font-size: 12px;
+}
+
+.container {
+    flex: 33%;
+    max-width: 33%;
+    overflow: hidden;
+   
+}
+.card{
+    border-radius: 15px 15px 15px 15px;
+    background-color: rgba(245, 244, 202, 0.034);
+    border: 1px solid black;
+    height: 450px;
+    padding:2px;
+    margin: 10px;
+}
+
+.cardPicture img{
+    width: 50%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    min-height: 200px;  
+    max-height: 200px;
+ 
+}
+.cardBody{
+    padding: 5px;
+    min-height: 130px;  
+    max-height: 130px;
+
+}
+.cardFooter{
+    padding:10px;
+    min-height: 50px;  
+    max-height: 50px;
+  
+}
+
+
+@media screen and (max-width:800px) {
+    .container {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
 
 .nav-ul {
     display:flex;
@@ -253,32 +303,24 @@ html {
                 <li><a>Disaster Ready Chippewa Valley</a></li>
                 
                 <li><a href="Home.html">Home</a></li>
-    
-                <div class="dropdown">
-                    <button class="dropbtn">About Us 
-                         <i class="fa fa-caret-down"></i>
-                    </button>
-                     <div class="dropdown-content">
-                        <a href="ContactUs.html">Contact Us</a>
-                        <a href="AboutUs.html">About Us</a>
-                    </div>
-                 </div> 
-    
+                <div class = "active">
+                <li><a href="AboutUs.html">AboutUs</a></li>
+                </div>
                 <li><a href="ContactUs.html">Contact Us</a></li>
                 <li><a href="DRCVMembership.html">DRCV Membership</a></li>
            
                 
                 <div class="dropdown">
-                    <div class="active">
+                    
                     <button class="dropbtn">Resources                      
                          <i class="fa fa-caret-down"></i>                     
                     </button>               
                      <div class="dropdown-content">                
                         <a href="KeyWebsites.html">Key Websites</a>
                         <a href="EmailList.html">Email List</a>
-                        <a href="ContinuityPlanning.html">Continuity Planning</a>                   
+                        <a href="ContinuityResources.html">Continuity Planning</a>                   
                     </div>
-                 </div> 
+                
                 </div>
     
                 <li><a href="More.html">More</a></li>
@@ -291,7 +333,7 @@ html {
             <a href="DRVCMembership.html">Membership</a>
             <a href="KeyWebsites.html">Key Websites</a>
             <a href="EmailList.html">Email List</a>
-            <a href="ContinuityPlanning.html">Continuity Planning</a>
+            <a href="ContinuityResources.html">Continuity Planning</a>
     
             <a href="More.html">More</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -321,85 +363,118 @@ html {
 </div>
 
 <h2 style="text-align:center;font-family:Open-Sans;color:rgb(7,38,100)">Our Team</h2>
+
 <div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="pictures\Bruce_King.jpg" alt="Bruce" style="width:40%">
-      <div class="container">
-        <h2 style="font-family: Open-Sans;">Bruce King</h2>
-        <p class="title">President</p>
-        <p>Governmental Affairs Director, REALTORS Association of Northwestern Wisconsin.</p>
-        <p>bruce@ranww.org</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
 
-  <div class="column">
-    <div class="card">
-      <img src="pictures\Ben_Bella.jpg" alt="Ben" style="width:45%">
-      <div class="container">
-        <h2 style="font-family: Open-Sans;">Ben Bella</h2>
-        <p class="title">Vice President</p>
-        <p>Safety & Compliance Officer, Eau Claire Energy Cooperative</p>
-        <p>https://www.linkedin.com/in/ben-bella-43934648/</p>
-        <p><button class="button">Contact</button></p>
+    <div class="container">
+
+      <div class="card">
+         <div class="cardPicture">
+           <img src="pictures\Bruce_King.jpeg" alt="Bruce">
+         </div>
+
+        <div class="cardBody">
+          <h2>Bruce King</h2>
+          <h4>President</h4>
+          <p>Governmental Affairs Director, REALTORS Association of Northwestern Wisconsin.</p>
+          <p>bruce@ranww.org</p>
+          <div class="cardFooter">
+          <footer>
+          <button class="button">Contact</button></footer></div>
+        </div>
       </div>
-    </div>
-  </div>
+
   
-  <div class="column">
-    <div class="card">
-      <img src="pictures\Adam_Bourget.jpg" alt="Adam" style="width:60%">
-      <div class="container">
-        <h2 style="font-family: Open-Sans;">Adam Bourget</h2>
-        <p class="title">Secretary</p>
-        <p> Environmental Engineering Specialist, Nestle Nutrition.</p>
-        <p>https://www.facebook.com/adam.bourget.3</p>
-        <p><button class="button">Contact</button></p>
+      <div class="card">
+        <div class="cardPicture">
+          <img src="pictures\Ben_Bella.jpeg" alt="Ben">
+        </div>
+
+        <div class="cardBody">
+          <h2>Ben Bella</h2>
+          <h4>Vice President</h4>
+          <p>Safety & Compliance Officer, Eau Claire Energy Cooperative</p>
+          <p>https://www.linkedin.com/in/ben-bella-43934648/</p>
+          <div class="cardFooter">
+          <footer>
+          <button class="button">Contact</button></footer></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="column">
+    <div class="container">
+      <div class="card">
+        <div class="cardPicture">
+          <img src="pictures\Adam_Bourget.jpeg" alt="Adam">
+        </div>
+
+        <div class="cardBody">
+          <h2>Adam Bourget</h2>
+          <h4>Secretary</h4>
+          <p>Environmental Engineering Specialist, Nestle Nutrition.</p>
+          <p>https://www.facebook.com/adam.bourget.3</p>
+          <div class="cardFooter">
+          <footer>
+          <button class="button">Contact</button></footer></div>
+        </div>
+      </div>
+
     <div class="card">
-      <img src="pictures\Brian_Drollinger.jpg" alt="Brian" style="width:50%">
-      <div class="container">
-        <h2 style="font-family: Open-Sans;">Brian Drollinger</h2>
-        <p class="title">Treasurer</p>
+      <div class="cardPicture">
+        <img src="pictures\Brian_Drollinger.jpeg" alt="Brian">
+      </div>
+
+      <div class="cardBody">
+        <h2>Brian Drollinger</h2>
+        <h4>Treasurer</h4>
         <p>Director of Risk Management, Safety and Sustainability, University of Wisconsin-Eau Claire.</p>
         <p>drollibk@uwec.edu</p>
-        <p><button class="button">Contact</button></p>
+        <div class="cardFooter">
+        <footer>
+        <button class="button">Contact</button></footer></div>
       </div>
     </div>
   </div>
 
-  <div class="column">
-    <div class="card">
-      <img src="pictures\Chris_Straight.jpg" alt="Chris" style="width:45%">
-      <div class="container">
-        <h2 style="font-family: Open-Sans;">Chris Straight</h2>
-        <p class="title">Administrator</p>
-        <p>Senior Planner, West Central Wisconsin Regional Planning Commission.</p>
-        <p>chris@wcwrpc.org</p>
-        <p><button class="button">Contact</button></p>
-      </div>
+
+  <div class = "container">
+   <div class="card">
+    <div class="cardPicture">
+      <img src="pictures\Chris_Straight.jpeg" alt="Chris">
+    </div>
+
+    <div class="cardBody">
+      <h2>Chris Straight</h2>
+      <h4>Administrator</h4>
+      <p>Senior Planner, West Central Wisconsin Regional Planning Commission.</p>
+      <p>chris@wcwrpc.org</p>
+      <div class="cardFooter">
+      <footer>
+      <button class="button">Contact</button></footer></div>
     </div>
   </div>
 
-  <div class="column">
+
+ 
     <div class="card">
-      <img src="pictures\Aimee_Nesseth.jpg" alt="Aimee" style="width:60%" style="height:20%">
-      <div class="container">
-        <h2 style="font-family: Open-Sans;">Aimee Wollman Nesseth</h2>
-        <p class="title">Coordinator</p>
-        <p>Coordinator, Northwest WI Healthcare Emergency Readiness Coalition.</p>
-        <p>coordinator@nwwiherc.org</p>
-        <p><button class="button">Contact</button></p>
+      <div class="cardPicture">
+        <img src="pictures\Aimee_Nesseth.jpeg" alt="Aimee">
       </div>
+  
+      <div class="cardBody">
+          <h2>Aimee Nesseth</h2>
+          <h4>Coordinator</h4>
+          <p>Coordinator, Northwest WI Healthcare Emergency Readiness Coalition.</p>
+          <p>coordinator@nwwiherc.org</p>
+          <div class="cardFooter">
+          <footer>
+          <button class="button">Contact</button></footer></div>
     </div>
+   </div>
   </div>
 </div>
+ 
+
 
 <footer class="footer">
         
