@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRCV</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="drcvlogo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: white">
+
+
+
+    <div class="nav">
+        <ul class = "nav-ul">
+            <li><a>
+                <div class="logo"><img src= "Pictures/drcvlogo.jpg" alt="Logo"></div>
+            </a></li>
+            <li><a>Disaster Ready Chippewa Valley</a></li>
+            <div class="active">
+            <li><a href="Home.html">Home</a></li>
+            </div>
+           
+            <li><a href="AboutUs.html">About Us</a></li>
+
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="DRCVMembership.html">DRCV Membership</a></li>
+       
+            
+            <div class="dropdown">
+                
+                <button class="dropbtn">Resources                      
+                     <i class="fa fa-caret-down"></i>                     
+                </button>               
+                 <div class="dropdown-content">                
+                    <a href="KeyWebsites.html">Key Websites</a>
+                    <a href="EmailList.html">Email List</a>
+                    <a href="ContinuityResources.html">Continuity Planning</a>                   
+                </div>
+      
+            </div>
+
+            <li><a href="More.html">More</a></li>
+        </ul>   
+    </div> 
+    <div class="topnav" id="myTopnav">
+        <a href="Home.html" class="active">Home</a>
+        <a href="AboutUs.html">Contact Us</a>
+        <a href="ContactUs.html">About Us</a>
+        <a href="DRCVMembership.html">Membership</a>
+        <a href="KeyWebsites.html">Key Websites</a>
+        <a href="EmailList.html">Email List</a>
+        <a href="ContinuityResources.html">Continuity Planning</a>
+
+        <a href="More.html">More</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <div class="slogan">
+        <div class="slogan-text">
+            <p><b>If our businesses are prepared, our communities are prepared</b></p>
+        </div>
+    </div>
+
+    <div id="events">
+        <div class="events-txt">
+            Upcoming Events
+        </div>
+        <hr>
+        <div class="events-link">
+            <a href="Upcomming.html"> Click here for Upcoming Events</a>
+        </div>
+    </div>
+    
+    <div class="grid-container">
+       
+        <div class="card" id="about">
+             <a href="AboutUs.html" style="text-decoration: none; color:black">
+            <div class= "grid-imgs">
+                <img src= "pictures\home.png" alt="Logo">
+            </div>
+            <h4>What We Do</h4>
+            <p>Learn about what we do, who we are, and our mission</p>
+          </a>  
+        </div>
+
+        <div class="card" id ="event">
+            <a href="Upcomming.html" style="text-decoration: none; color:black">
+            <div class= "grid-imgs">
+                <img src= "pictures\event.png" alt="Logo">
+                
+            </div>
+            <h4>Workshops</h4>
+            <p>Find out about upcomming events and browse past seminars</p>
+            </a>
+        </div>
+
+        <div class="card" id="resources">
+            <a href="KeyWebsites.html" style="text-decoration: none; color:black">
+            <div class= "grid-imgs">
+                <img src= "pictures\about.png" alt="Logo">
+                
+            </div>
+            <h4>Resources</h4>
+            <p>Access a collection of websites with prepardness info</p>
+            </a>
+        </div>  
+
+        <div class="card" id="mail">
+            <a href="EmailList.html" style="text-decoration: none; color:black">
+            <div class= "grid-imgs">
+                <img src= "pictures\email.png" alt="Logo">
+                
+            </div>
+            <h4>Stay Informed</h4> 
+            <p>Stay up to date by joining our mailing list or become a member</p>
+        </a>
+        </div>  
+     
+      </div>
+
+    <div class="mission">
+        <h2>Our Mission</h2>
+        <p>If our businesses are prepared for disaster, then our communities are prepared.
+        That's where we come in. Our mission is to help local buisinesses prepare for the worst
+        by providing them instructional resources and guides on how to better prepare themselves
+        tokeep their assets and employees safe in times of emergency. Furthermore, By ensuring our
+        local buisinesses are prepared for when disaster strikes, we are able to help increase the
+        resiliancy of our community as a whole.</p>
+    </div>
+
+    <div class="video-strip">
+        <div class="video-description">
+            <h2 id="description-header">Ready Business Video - Lessons Learned</h2>
+            <p id="description-text">North Dakota State University produced an excellent short video on why it is important for businesses to prepare for disasters.</p>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Zp8pSqGsVZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <footer class="footer">
+        
+        <p>Icons from <a href="https://icons8.com/" target="_blank">Icons8</a></p>
+        <p>Site Developed by: Caden Joergens Kaia Hansen JJ Wertkin  Spencer Keith</p>
+        <p>report an issue on <a href="https://github.com/mrrobots2021/DRSV" target="_blank">github</a></p>
+
+    </footer>
+
+</body>
+
+</html>
