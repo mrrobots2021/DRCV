@@ -2,6 +2,8 @@
     font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
   
+  
+  
   /*ALL FOR THE NAV BARS DON'T TOUCH*/
   .nav-ul {
     display:flex;
@@ -82,14 +84,14 @@
     background-color: #000000;
    
   }
-
+  
   .logo img {
     width:5vw;
     height:3vw;
     padding: none;
     margin:none;
   }
-
+  
   .dropdown {
     float: left;
     overflow: hidden;
@@ -98,7 +100,7 @@
   
   /* Style the dropdown button to fit inside the topnav */
   .dropdown .dropbtn {
-    font-size: 17px; 
+    font-size:1.3vw;
     border: none;
     outline: none;
     color: white;
@@ -157,36 +159,69 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }  
-
+  
   /*END OF NAV BARS*/
 
 
+  .loginContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+  }
 
-  .ConHeading{
-    text-align:center;
-    margin-top: 60px;
-    color:rgba(0,35,99,1);
-    font-weight:900;
-    font-size:50px;
-    font-family:'Open-Sans';
-   
-}
+  #main-holder {
+    box-sizing: border-box;
+    background-color: rgb(7,38,100);
+    display: flex;
+    width: 375px;
+    display: grid;
+    justify-items: center;
+    /*background-color: rgb(251, 252, 241);*/
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 2px black;
+  }
 
+  #login-header{
+    background-color: white;
+    border-radius: 7px;
+    padding: 7px;
+  }
 
-.summary{ 
-    padding-top: 40px;
-    padding-left:80px;
-    padding-right:80px;
-    text-align:left;
-}
+  #login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
 
-ol li{
-    font-size:14px;
-    margin:20px;
-    margin-right:300px;
-}
+  .login-form-field {
+    width:100%;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+  }
+  
+  /* Style the login button */
+  
+  #login-form-submit {
+    width: 100%;
+    padding: 7px;
+    margin: 7px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: lightgrey;
+    cursor: pointer;
+    outline: none;
+  }
 
-.footer {
+  .footer {
     display:flex;
     align-items:center;
     justify-content: space-around;
@@ -201,3 +236,4 @@ ol li{
       flex-direction: column;
     }
   }
+  

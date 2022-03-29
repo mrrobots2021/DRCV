@@ -1,9 +1,14 @@
-*{
-    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+/*Nav Bar*/
+* {
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: rgb(248,244,220);
   }
   
   /*ALL FOR THE NAV BARS DON'T TOUCH*/
-  .nav-ul {
+.nav-ul {
     display:flex;
     align-items: stretch; 
     justify-content: space-around;
@@ -82,14 +87,14 @@
     background-color: #000000;
    
   }
-
+  
   .logo img {
     width:5vw;
     height:3vw;
     padding: none;
     margin:none;
   }
-
+  
   .dropdown {
     float: left;
     overflow: hidden;
@@ -98,7 +103,7 @@
   
   /* Style the dropdown button to fit inside the topnav */
   .dropdown .dropbtn {
-    font-size: 17px; 
+    font-size:1.3vw;
     border: none;
     outline: none;
     color: white;
@@ -157,47 +162,126 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }  
-
+  
   /*END OF NAV BARS*/
-
-
-
-  .ConHeading{
-    text-align:center;
-    margin-top: 60px;
-    color:rgba(0,35,99,1);
-    font-weight:900;
-    font-size:50px;
-    font-family:'Open-Sans';
+  
+  
+  
+  /*Boxes*/
+  .bi{
+    font-size: larger;
+  }
+  .center-text {
+    display: block;
+    text-align: center;
+  }
+  
+  .header-box {
+    background-image: url("pictures/meeting.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border: solid 4px rgb(7, 38, 100);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 2%;
+  }
+  #where{
+    grid-area: where;
+  }
+  #when{
+    grid-area: when;
+  }
+  #register{
+    grid-area: rsvp;
+  }
+  #agenda{
+    grid-area: agenda;
+  }
+  .flex-flyer{
+    display: flex;
+    width: 100vw;
+  }
+  
+  .flex-container {
+    margin: 12px auto 0;
+    display: grid;
+    grid-template-areas: 
    
-}
-
-
-.summary{ 
-    padding-top: 40px;
-    padding-left:80px;
-    padding-right:80px;
-    text-align:left;
-}
-
-ol li{
-    font-size:14px;
-    margin:20px;
-    margin-right:300px;
-}
-
-.footer {
-    display:flex;
-    align-items:center;
+    'when agenda agenda agenda'
+    'where agenda agenda agenda'
+    'rsvp agenda agenda agenda';
+  
+  }
+  
+  .card {
+    box-sizing: border-box;
+   
+    background-color: ghostwhite;
+    margin: 20px;
+    border: solid 1px rgb(7,38,100);
+    border-radius: 10px;
+    padding: 10px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .tab {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  
+  .footer {
+    padding: 1.25rem 1.875rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
     justify-content: space-around;
-    flex-direction: row;
     text-align: center;
     color:white;
     background-color: rgb(7,38,100);
     
   }
-  @media screen and (max-width:40rem){
-    .footer{
-      flex-direction: column;
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgb(7,38,100);;
+  }  
+  
+  /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+  /*           responsive design ▼ ▼ ▼
+  /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+  
+  @media screen and (max-width: 1000px) {
+    .flex-container {
+     
+      grid-template-areas: 
+     
+      'when when where where'
+      'rsvp rsvp rsvp rsvp'
+      'agenda agenda agenda agenda';
     }
+    .footer{
+      grid-template-columns: 1fr;
+    }
+  
+  
   }
+  @media screen and (max-width: 600px) {
+    .flex-container {
+     
+      grid-template-areas: 
+    
+      'when when'
+      'where where'
+      'rsvp rsvp '
+      'agenda agenda';
+    }
+    .footer{
+      grid-template-columns: 1fr;
+    }
+  
+  }
+  
+  
+  
+  
+  

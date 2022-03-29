@@ -196,5 +196,22 @@
   }
 
 
+  .footer {
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    color:white;
+    background-color: rgb(7,38,100);
+    
+  }
+  @media screen and (max-width:40rem){
+    .footer{
+      flex-direction: column;
+    }
+  }
+
+
 
  

@@ -8,23 +8,66 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="ContinuityResources.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div>
-        <ul>
+    <div class="nav">
+        <ul class = "nav-ul">
             <li><a>
-                <img class="logo" src= "pictures/drcvlogo.jpg" alt="Logo">
+                <div class="logo"><img src= "Pictures/drcvlogo.jpg" alt="Logo"></div>
             </a></li>
             <li><a>Disaster Ready Chippewa Valley</a></li>
+            
             <li><a href="Home.html">Home</a></li>
+           
+           
             <li><a href="AboutUs.html">About Us</a></li>
+
             <li><a href="ContactUs.html">Contact Us</a></li>
             <li><a href="DRCVMembership.html">DRCV Membership</a></li>
-            <li><a href="Resources.html">Resources</a></li>
+       
+            
+            <div class="dropdown">
+                <div class="active">
+                <button class="dropbtn">Resources                      
+                     <i class="fa fa-caret-down"></i>                     
+                </button>               
+                 <div class="dropdown-content">                
+                    <a href="KeyWebsites.html">Key Websites</a>
+                    <a href="EmailList.html">Email List</a>
+                    <a href="ContinuityResources.html">Continuity Planning</a>                   
+                </div>
+                </div>
+            </div>
+
             <li><a href="More.html">More</a></li>
-        </ul>
+        </ul>   
+    </div> 
+    <div class="topnav" id="myTopnav">
+        <a href="Home.html" class="active">Home</a>
+        <a href="AboutUs.html">Contact Us</a>
+        <a href="ContactUs.html">About Us</a>
+        <a href="DRVCMembership.html">Membership</a>
+        <a href="KeyWebsites.html">Key Websites</a>
+        <a href="EmailList.html">Email List</a>
+        <a href="ContinuityResources.html">Continuity Planning</a>
+
+        <a href="More.html">More</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
 
     <div class="header-box">
         <h1 class="center-text" >Continuity Planning Resources</h1>
@@ -36,27 +79,27 @@
             <hr/>
             <h3 class="center-text" ><b>Ready.gov Business Continuity Planning Suite</h3>
             <h4 class="center-text" >(includes a training video and plan generators)</h4>
-            <a class="center-text" href="http://www.ready.gov/business-continuity-planning-suite" target="_blank">Get more information</a>
+            <a class="center-text" href="http://www.ready.gov/business-continuity-planning-suite" style= "color:black"; target="_blank">Get more information</a>
             <h3 class="center-text" ><b>Red Cross Workplace Preparedness Webpage</h3> 
             <h4 class="center-text" >(information on their Business Continuity Planning CD-ROM)</h4>
-            <a class="center-text" href="http://www.redcross.org/prepare/location/workplace" target="_blank">Get more information</a>
+            <a class="center-text" href="http://www.redcross.org/prepare/location/workplace" style= "color:black"; target="_blank">Get more information</a>
             <h3 class="center-text" ><b>Red Cross ReadyRating Program</b></h3>
             <h4 class="center-text" >(web-based preparedness assessment for organizations)</h4>
-            <a class="center-text" href="http://readyrating.org/" target="_blank">Get more information</a>
+            <a class="center-text" href="http://readyrating.org/" style= "color:black"; target="_blank">Get more information</a>
         </div>
 
         <div class="card">
             <h2 class="center-text" ><b>Natural Hazards</b></h2>
             <hr/>
             <h3 class="center-text" ><b>FEMA Floodplain Management Information for Property Owners</h3>
-            <a class="center-text" href="https://www.fema.gov/floodplain-management-0/floodplain-management-information-property-owners" target="_blank">Get more information</a>
+            <a class="center-text" href="https://www.fema.gov/floodplain-management-0/floodplain-management-information-property-owners" style= "color:black"; target="_blank">Get more information</a>
         </div>
 
         <div class="card">
             <h2 class="center-text" ><b>Workplace Violence/Active Shooter</b></h2>
             <hr/>
             <h3 class="center-text" ><b>Visit our webpage from our May 2013 Workplace Violence Seminar</h3>
-            <a class="center-text" href="https://sites.google.com/site/disasterreadycv/resources/may-2013-workplace-violence-seminar-1?authuser=0" target="_blank">Get more information</a>
+            <a class="center-text" href="WorkPlaceViolence.html" style= "color:black"; target="_blank">Get more information</a>
         </div>
 
         <div class="card">
@@ -64,7 +107,7 @@
             <hr/>
             <h3 class="center-text" ><b>CDC Webpage for Businesses</h3>
             <h4 class="center-text" >(includes the checklist available for download below)</h4>
-            <a class="center-text" href="http://www.flu.gov/planning-preparedness/business/" target="_blank">Get more information</a>
+            <a class="center-text" href="http://www.flu.gov/planning-preparedness/business/" style= "color:black"; target="_blank">Get more information</a>
         </div>
 
         <div class="card">
@@ -72,7 +115,7 @@
             <hr/>
             <h3 class="center-text" ><b>Red Cross Tools and Resources</h3>
             <h4 class="center-text" >(information and checklists for a variety of hazards)</h4>
-            <a class="center-text" href="http://www.redcross.org/prepare/disaster-safety-library" target="_blank">Get more information</a>
+            <a class="center-text" href="http://www.redcross.org/prepare/disaster-safety-library" style= "color:black"; target="_blank">Get more information</a>
         </div>
     </div>
 </body>
