@@ -1,0 +1,127 @@
+<!--This is more of a contact form for the ContactUs page-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="NavBarStyle.css">  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ccc;
+  color: rgb(7,38,100);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(7,38,100);
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+  .footer {
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    color:white;
+    background-color: rgb(7,38,100);
+    
+  }
+
+</style>
+</head>
+<body>
+   <!-- Nav Bar -->
+   <header class="header">
+    <div class="brand">
+      <div id="nav-burger" class="nav-burger is-active">
+        <img src="pictures/hamburger-button.png" alt="Menu" class="nav-icon">
+      </div>
+      <a href="Home.html" class="brand-logo">
+        <img src="pictures/drcvlogo.jpg" alt="Logo">
+      </a>
+      <div class="brand-text">
+        Disaster Ready Chippewa Valley
+      </div>
+    </div>
+    <nav id="nav" class="nav">
+      <a href="Home.html" class="nav-link">Home</a>
+      <a href="AboutUs.html" class="nav-link">About Us</a>
+      <a href="ContactUs.html" class="nav-link">Contact Us</a>
+      <a href="DRCVMembership.html" class="nav-link">DRCV Membership</a>
+
+      <div id="hide">
+        <a href="KeyWebsites.html">Key Websites</a>
+        <a href="EmailList.html">Email List</a>
+        <a href="ContinuityResources.html">Continutiy Planning</a>
+      </div>
+  
+      <div class="dropdown">
+        <button>Resources</button>
+        <div class="dropdown-content">
+        <a href="KeyWebsites.html">Key Websites</a>
+        <a href="EmailList.html">Email List</a>
+        <a href="ContinuityResources.html">Continutiy Planning</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <script src="script.js"></script>
+  <!-- End Nav Bar -->
+
+<h3 style="color: rgb(7,38,100)">Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First and Last Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="country">County</label>
+    <select id="county" name="county">
+      <option value="australia">Chippewa</option>
+      <option value="canada">Eau Claire</option>
+      <option value="usa">Dunn</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<footer class="footer">
+        
+  <p>Icons from <a href="https://icons8.com/" target="_blank">Icons8</a></p>
+  <p>Site Developed by: Caden Joergens Kaia Hansen JJ Wertkin  Spencer Keith</p>
+  <p>report an issue on <a href="https://github.com/mrrobots2021/DRSV" target="_blank">github</a></p>
+
+</footer>
+
+</body>
+</html>

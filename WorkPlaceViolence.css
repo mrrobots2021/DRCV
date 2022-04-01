@@ -1,0 +1,46 @@
+*{
+    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+  
+
+
+  .ConHeading{
+    text-align:center;
+    margin-top: 60px;
+    color:rgba(0,35,99,1);
+    font-weight:900;
+    font-size:50px;
+    font-family:'Open-Sans';
+   
+}
+
+
+.summary{ 
+    padding-top: 40px;
+    padding-left:80px;
+    padding-right:80px;
+    text-align:left;
+}
+
+ol li{
+    font-size:14px;
+    margin:20px;
+    margin-right:300px;
+}
+
+.footer {
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    color:white;
+    background-color: rgb(7,38,100);
+    
+  }
+  @media screen and (max-width:40rem){
+    .footer{
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,188 @@
+*{
+  font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h2{
+  font-size: x-large;
+}
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*       elements ▲ ▲ ▲          classes ▼ ▼ ▼
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+.slogan {
+  display:flex;
+  border: 2px solid black;
+  background-image: url("pictures/FireFighter1.jpg");
+  background-size: cover;
+  height: 350px;
+  background-position: center;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+}
+
+.slogan-text {
+  font-weight:bolder;
+  color:black;
+  font-size: 3vw;
+  background-color: rgba(252, 250, 247, 0.507);
+  opacity:0.8;
+  padding: 10px;
+}
+
+.events-txt {
+  flex: 0 1 50%;
+  margin: 10px;
+  font-size: 2vw;
+  text-align:center; 
+}
+
+.events-link {
+  flex: 0 2 50%;
+  margin: 10px;
+  font-size: 2vw;
+  color:blue;
+  text-align: center; 
+}
+
+.mission {
+  box-sizing: border-box;
+  color:white;
+  align-items: center;
+  background-color: rgb(7,38,100);
+  border-radius: 15px ;
+  margin: 0.5rem;
+  padding:2rem;
+  text-align: center;
+}
+.mission p{
+  font-size: large;
+}
+
+
+/*Main section 4x4 grid.*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  color: rgba(0, 0, 0, 0.699);
+  padding: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.card {
+  text-decoration: none;
+  box-sizing: content-box;
+  background-color: silver;
+  padding: 1rem;
+  text-align: center;
+  font-size: larger;
+  border-radius:5px;
+}
+
+.card:hover{
+  background-color: rgb(28, 60, 122);
+  color:white;
+  /*change images to white*/
+}
+
+.grid-imgs {
+  box-sizing: content-box;
+  vertical-align: baseline;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.card h4{
+  font-size: larger;
+  
+}
+
+@media screen and (max-width:50rem) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width:40rem) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+}
+
+
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*       pseudoclasses ▲ ▲ ▲           id ▼ ▼ ▼
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+#events {
+  margin:10px 0px 10px 0px;
+  display:flex;
+  color:white;
+  background-color: rgb(7,38,100);
+}
+
+
+.video-strip {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items:center;
+  border-radius: 15px ;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgba(199, 199, 199, 0.658);
+}
+
+.video-description {
+  padding: 10px;
+  color: black;
+}
+
+@media screen and (max-width: 40rem) {
+  .video-strip {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items:center;
+
+  }
+  .video-strip iframe{
+    width: auto;
+  }
+}
+.footer {
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
+  color:white;
+  background-color: rgb(7,38,100);
+  
+}
+@media screen and (max-width:40rem){
+  .footer{
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

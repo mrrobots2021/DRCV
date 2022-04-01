@@ -1,0 +1,78 @@
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*       elements ▼ ▼ ▼
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+* {
+  font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(252, 250, 246);
+}
+
+
+h1 {
+  font-size: 42px;
+  background-color: rgb(252, 250, 246);
+  border: solid 2px rgb(7, 38, 100);
+  border-radius: 20%;
+}
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*       elements ▲ ▲ ▲           classes ▼ ▼ ▼
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+
+
+.header-box {
+  background-image: url("pictures/meeting.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border: solid 4px rgb(7, 38, 100);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 2%;
+}
+
+.deck {
+  border: solid 8px rgb(7,38,100);
+  margin: 12px auto 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: ghostwhite;
+  width: 40vw;
+  height: fit-content;
+  margin: 20px;
+  border: solid 1px rgb(7,38,100);
+  border-radius: 10px;
+  padding: 10px 20px 20px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.center-text {
+  display: block;
+  text-align: center;
+}
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*       classes ▲ ▲ ▲           pseudoclasses ▼ ▼ ▼
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}  
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*       pseudoclasses ▲ ▲ ▲           responsive design ▼ ▼ ▼
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+@media screen and (max-width: 1280px) {
+  .card {
+      width: 80vw;
+  }
+}
