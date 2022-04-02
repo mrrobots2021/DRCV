@@ -3,12 +3,13 @@
 * {
   box-sizing: border-box;
 }
+
   body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  padding:5px;
+  padding:0;
   display: flex;
 }
 
@@ -69,6 +70,7 @@
   width: 100%;
   padding: 30px 30px 0px 30px;
   z-index: 90; 
+  margin: 0 0 5vh 0;
 }
 .nav.is-active {
   display: inline-block;
@@ -214,15 +216,18 @@ header .a:hover {
 }
 /* end media queries */
 
-/********************Footer********************/
+/***YOUR CODE HERE****/
+
+/****Footer****/
 footer#shoe {
+  display: flex;
+  flex-wrap: wrap;
+  flex:1;
+  padding: 1.25rem 1.875rem;
+  margin: 5vh 0 0 0;
   background-color: rgb(7,38,100);
   color: #bbb;
   line-height: 1.5;
-  flex:1;
-  padding: 1.25rem 1.875rem;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -235,12 +240,15 @@ footer#shoe a {
   text-decoration: none;
   color: #eee;
 }
+
 footer#shoe a:hover {
   text-decoration: underline;
 }
-footer .bi{
+
+footer#shoe .bi{
   font-size: x-large;
 }
+
 .toe-tag{
   color: #fff;
   font-size: 1.375rem;
@@ -250,5 +258,7 @@ footer .bi{
 @media (max-width:768px) {
   footer#shoe{
     flex-direction: column;
+    align-content: center;
   }
 }
+/****Footer End****/

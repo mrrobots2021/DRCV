@@ -1,0 +1,164 @@
+*{
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(248,244,220);
+}
+
+.section-title{
+    color: rgb(7,38,100);
+    text-align: center;
+}
+
+/****Top Text Section****/
+.about-section{
+    margin: 0 3vw;
+    text-align: center;
+}
+
+.goals{
+    padding-bottom: 1rem;
+    border-bottom: dashed 1px black;
+}
+.goals li{
+    list-style-type: none;
+    text-align:left;
+}
+
+.motto{
+    font-size: larger;
+    margin-bottom: 4rem;
+}
+
+/****About Cards****/
+
+/*Cards live in a 3 column grid*/
+.deck{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 3vw;
+    gap: 3vw;   
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 80vh;
+    padding: 0 2rem 0.5rem 2vw;
+    border: outset 0.25rem rgb(7,38,100);
+    border-radius: 1rem;
+    background-color: ghostwhite;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/*Keep the images lined up and similar size*/
+.card .card-picture{
+    display: flex;
+    min-height:25%;
+    max-height: 30%;
+    padding-bottom: 0.5rem;
+}
+
+/*Keep the picture scale and centered*/
+.card .card-picture img{
+    object-fit:contain;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+/*Card Information*/
+.card-body .name, .card-body .position{
+    padding: 0;
+    margin: 0.25rem;
+    text-align: center;
+}
+
+/*makes the position subtitle slanted*/
+.card-body .position{
+    font-style: oblique;
+}
+
+.card article{
+    display: flex;
+    flex-grow:1;
+    flex-direction: column;
+    padding: 0 0.5rem 0 0.5rem;
+    overflow: hidden auto;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgb(7,38,100);
+}
+
+/*Card Footer and Buttons*/
+.card .card-footer{
+    display:flex;
+    width:100%;
+    height: fit-content;
+    padding: 0.5rem;
+    background-color: inherit;
+    border-top: 1px dotted black;
+    justify-content: space-between;
+}
+
+.card .card-footer .button{
+    box-sizing: border-box;
+    text-align: center;  
+    font-weight:bolder;
+    text-decoration: none;
+    justify-content: baseline;
+    border: 0.15rem solid;
+    border-radius: 0.3rem;
+    padding: 0 0.5rem;
+}
+
+.card .card-footer .bi{
+    font-size: 1.5rem;
+}
+/*invert button colors when hovered*/
+.card .card-footer .email.button{
+    border-color:forestgreen;
+    color: forestgreen;
+}
+.card .card-footer .email.button:hover{
+    background-color:forestgreen;
+    color: white;
+}
+
+.card .card-footer .facebook.button{
+    color: rgb(66, 103, 178);
+    border-color: rgb(66, 103, 178);
+}
+.card .card-footer .facebook.button:hover{
+    background-color: rgb(0, 119, 181);
+    color: white;
+}
+
+.card .card-footer .button.linkedin{
+    color: rgb(0, 119, 181);
+    border-color: rgb(0, 119, 181);
+}
+.card .card-footer .linkedin.button:hover{
+    background-color: rgb(0, 119, 181);
+    color: white;
+}
+
+
+@media screen and (max-width:60rem) {
+    .deck {
+      grid-template-columns: auto auto;
+    }
+  }
+  
+  @media screen and (max-width:40rem) {
+    .deck{
+      grid-template-columns: auto;
+    }
+  }

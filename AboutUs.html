@@ -1,309 +1,179 @@
 <!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="NavBarStyle.css">  
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>DRCV</title>
+    <link href="NavBarStyle.css" rel="stylesheet" type="text/css" />
+    <link href="AboutUs.css" rel="stylesheet"/>
 
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: white;
-  color: black;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-footer{
-    font-size: 12px;
-}
-
-.container {
-    flex: 33%;
-    max-width: 33%;
-    overflow: hidden;
-   
-}
-.card{
-    border-radius: 15px 15px 15px 15px;
-    background-color: rgba(245, 244, 202, 0.034);
-    border: 1px solid black;
-    height: 450px;
-    padding:2px;
-    margin: 10px;
-}
-
-.cardPicture img{
-    width: 50%;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-    min-height: 200px;  
-    max-height: 200px;
- 
-}
-.cardBody{
-    padding: 5px;
-    min-height: 130px;  
-    max-height: 130px;
-
-}
-.cardFooter{
-    padding:10px;
-    min-height: 50px;  
-    max-height: 50px;
-  
-}
-
-
-@media screen and (max-width:800px) {
-    .container {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .container {
-        flex: 100%;
-        max-width: 100%;
-    }
-
-}
-
-
-
-  .footer {
-    display:flex;
-    align-items:center;
-    justify-content: space-around;
-    flex-direction: row;
-    text-align: center;
-    color:white;
-    background-color: rgb(7,38,100);
-    
-  }
-
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-
-
-  }
-  
-}
-</style>
-</head>
-    <body style="background-color: rgba(239, 245, 247, 0.185)">
-
-        <!-- Nav Bar -->
-    <header class="header">
-      <div class="brand">
-        <div id="nav-burger" class="nav-burger is-active">
-          <img src="pictures/hamburger-button.png" alt="Menu" class="nav-icon">
-        </div>
-        <a href="Home.html" class="brand-logo">
-          <img src="pictures/drcvlogo.jpg" alt="Logo">
-        </a>
-        <div class="brand-text">
-          Disaster Ready Chippewa Valley
-        </div>
-      </div>
-      <nav id="nav" class="nav">
-        <a href="Home.html" class="nav-link">Home</a>
-        <a href="AboutUs.html" class="nav-link">About Us</a>
-        <a href="ContactUs.html" class="nav-link">Contact Us</a>
-        <a href="DRCVMembership.html" class="nav-link">DRCV Membership</a>
-
-        <div id="hide">
-          <a href="KeyWebsites.html">Key Websites</a>
-          <a href="EmailList.html">Email List</a>
-          <a href="ContinuityResources.html">Continutiy Planning</a>
-        </div>
-    
-        <div class="dropdown">
-          <button>Resources</button>
-          <div class="dropdown-content">
-          <a href="KeyWebsites.html">Key Websites</a>
-          <a href="EmailList.html">Email List</a>
-          <a href="ContinuityResources.html">Continutiy Planning</a>
+  </head>
+  <body style="margin:0;">
+      <header class="header">
+        <div class="brand">
+          <div id="nav-burger" class="nav-burger is-active">
+            <i class="bi bi-list"></i>
+          </div>
+          <a href="Home.html" class="brand-logo">
+            <img src="pictures/drcvlogo.jpg" alt="Logo">
+          </a>
+          <div class="brand-text">
+            Disaster Ready Chippewa Valley
           </div>
         </div>
-      </nav>
-    </header>
 
-    <script src="script.js"></script>
-    <!-- End Nav Bar -->
+        <nav id="nav" class="nav">
+          <a href="Home.html" class="nav-link"><i class="bi bi-house-fill"></i> Home</a>
+          <a href="AboutUs.html" class="nav-link"><i class="bi bi-person-circle"></i> About Us</a>
+          <a href="ContactUs.html" class="nav-link"><i class="bi bi-send"></i> Contact Us</a>
+          <a href="Upcomming.html" class="nav-link"><i class="bi bi-megaphone"></i> Upcomming Events</a>
+          <a href="DRCVMembership.html" class="nav-link"><i class="bi bi-key"></i> DRCV Membership</a>
+          
+          <div id="hide">
+            <a href="KeyWebsites.html"><i class="bi bi-cone-striped"></i> Key Websites</a>
+            <a href="EmailList.html"><i class="bi bi-mailbox"></i> Email List </a>
+            <a href="ContinuityResources.html"><i class="bi bi-diagram-3"></i> Continutiy Planning</a>
+            <a href="PastEvents.html"><i class="bi bi-calendar-event"></i> Past Workshops</a>
+          </div>
+      
+          <div class="dropdown">
+            <button><i class="bi bi-bookmark-star"></i> Resources</button>
+            <div class="dropdown-content">
+              <a href="KeyWebsites.html"><i class="bi bi-cone-striped"></i> Key Websites</a>
+              <a href="EmailList.html"><i class="bi bi-mailbox"></i> Email List</a>
+              <a href="ContinuityResources.html"><i class="bi bi-diagram-3"></i> Continutiy Planning</a>
+              <a href="PastEvents.html"><i class="bi bi-calendar-event"></i> Past Workshops</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <script src="script.js"></script>
+    
+      <!--Top About Section-->
+      <div class="about-section">
+        <h1 class="section-title">About Us</h1>
+        <p>Disaster Ready Chippewa Valley, Inc., is a tax exempt, non-profit organization formed exclusively for charitable and educational purposes as defined in Section 501(c)3 of the Internal Revenue Code.  Disaster Ready Chippewa Valley, Inc., was incorporated in the State of Wisconsin in April 2011.</p>
+        <ol class="goals">
+          <li><b>Goal 1:</b> To sustain a strong, effective organization to guide, coordinate, and implement project activities.</li>
+          <li><b>Goal 2:</b> To increase private-sector awareness of disaster threats, provide businesses with the tools to mitigate their risks, and advocate for an efficient system of distributing goods, services, and other resources to the community and businesses in times of a disaster.</li>
+          <li><b>Goal 3:</b> Strengthen private-sector involvement and communication with government emergency planning and response entities.</li>
+        </ol>    
+        <h5 class="motto"><b>Motto:</b> <i>If Chippewa Valley businesses are prepared for a disaster, then our communities are better prepared.</i></h5>
+      </div>
 
-<div class="about-section">
-  <h1 style="color: rgb(7,38,100);font-family:Open-Sans">About Us</h1>
-  <p style="font-family:Open-Sans;">Disaster Ready Chippewa Valley, Inc., is a tax exempt, non-profit organization formed exclusively for charitable and educational purposes as defined in Section 501(c)3 of the Internal Revenue Code.  Disaster Ready Chippewa Valley, Inc., was incorporated in the State of Wisconsin in April 2011.</p>
-  <p style="font-family:Open-Sans;"><b>Goal 1:</b> To sustain a strong, effective organization to guide, coordinate, and implement project activities.</p>
-  <p style="font-family:Open-Sans;"><b>Goal 2:</b> To increase private-sector awareness of disaster threats, provide businesses with the tools to mitigate their risks, and advocate for an efficient system of distributing goods, services, and other resources to the community and businesses in times of a disaster.</p>
-  <p style="font-family:Open-Sans;"><b>Goal 3:</b> Strengthen private-sector involvement and communication with government emergency planning and response entities.</p>
-  _____________________________________________________________________________________________________
-  <p style="font-family:Open-Sans;font-size: larger;"><b>Motto:</b> <i>If Chippewa Valley businesses are prepared for a disaster, then our communities are better prepared.</i></p>
-</div>
+      <h2 class = "section-title">Our Team</h2>
 
-<h2 style="text-align:center;font-family:Open-Sans;color:rgb(7,38,100)">Our Team</h2>
+      <!--Cards About members-->
+      <div class="deck">
+        <div class="card" id="bruce">
+          <div class="card-picture">
+            <img src="pictures/Bruce_King.jpg" alt="Bruce">
+          </div>            
+          <article class="card-body">
+            <h3 class="name">Bruce King</h3>
+            <h4 class="position">President</h4>
+            <p class = "about">Governmental Affairs Director, REALTORS Association of Northwestern Wisconsin</p>
+            </article>
+          <footer class="card-footer">
+            <a href='mailto:bruce@ranww.org' class="email button"><span><i class="bi bi-envelope-plus-fill"></i> place</span></a>
+            <a href='mailto:bruce@ranww.org' class="email button"><span><i class="bi bi-envelope-plus-fill"></i> Contact</span></a>
+          </footer>
+        </div>
 
-<div class="row">
+        <div class="card" id="ben">
+          <div class="card-picture">
+            <img src="pictures/Ben_Bella.jpg" alt="Bruce">
+          </div>            
+          <article class="card-body">
+            <h3 class="name">Ben Bella</h3>
+            <h4 class="position">Vice President</h4>
+            <p class = "about">Safety & Compliance Officer, Eau Claire Energy Cooperative</p>
+          </article>
+          <footer class="card-footer">
+            <a href='https://www.linkedin.com/in/ben-bella-43934648/' class="linkedin button"><span ><i class="bi bi-linkedin" aria-label="linkedin"></i> Linkedin</span></a>
+            <a href='mailto:bruce@ranww.org' class="email button"><span><i class="bi bi-envelope-plus-fill"></i> place</span></a>
+          </footer>
+        </div>
 
-    <div class="container">
+        <div class="card" id="adam">
+          <div class="card-picture">
+            <img src="pictures/Adam_Bourget.jpg" alt="Adam">
+          </div>            
+          <article class="card-body">
+            <h3 class="name">Adam Bourget</h3>
+            <h4 class="position">Secretary</h4>
+            <p class = "about">Environmental Engineering Specialist, Nestle Nutrition.</p>
+          </article>
+          <footer class="card-footer">
+            <a href='https://www.facebook.com/adam.bourget.3' class="facebook button"><span><i class="bi bi-facebook" aria-label="facebook"></i> noemail</span></a>
+            <a href='mailto:bruce@ranww.org' class="email button"><span><i class="bi bi-envelope-plus-fill"></i> noemail</span></a>
+          </footer>
+        </div>
 
-      <div class="card">
-         <div class="cardPicture">
-           <img src="pictures\Bruce_King.jpeg" alt="Bruce">
-         </div>
+        <div class="card" id="brian">
+          <div class="card-picture">
+            <img src="pictures/Brian_Drollinger.jpg" alt="Brian">
+          </div>            
+          <article class="card-body">
+            <h3 class="name">Brian Drollinger</h3>
+            <h4 class="position">Treasurer</h4>
+            <p class = "about">Director of Risk Management, Safety and Sustainability, University of Wisconsin-Eau Claire.</p>
+          </article>
+          <footer class="card-footer">
+            <a href='https://www.linkedin.com/in/ben-bella-43934648/' class="linkedin button"><span><i class="bi bi-linkedin" aria-label="linkedin"></i> place</span></a>
+            <a href='mailto:drollibk@uwec.edu' class="email button"><span><i class="bi bi-envelope-plus-fill"></i> Contact</span></a>
+          </footer>
+        </div>
 
-        <div class="cardBody">
-          <h2>Bruce King</h2>
-          <h4>President</h4>
-          <p>Governmental Affairs Director, REALTORS Association of Northwestern Wisconsin.</p>
-          <p>bruce@ranww.org</p>
-          <div class="cardFooter">
-          <footer>
-          <button class="button">Contact</button></footer></div>
+        <div class="card" id="aimee">
+          <div class="card-picture">
+              <img src="pictures/Aimee_Nesseth.jpg" alt="Aimee">
+          </div>            
+          <article class="card-body">
+            <h3 class="name">Aimee Nesseth</h3>
+            <h4 class="position">Coordinator</h4>
+            <p class="about">Coordinator, Northwest WI Healthcare Emergency Readiness Coalition.</p>
+          </article>
+          <footer class="card-footer">
+            <a href='https://www.facebook.com/adam.bourget.3' class="facebook button"><span><i class="bi bi-facebook" aria-label="facebook"></i> facebook</span></a>
+            <a href='mailto:coordinator@nwwiherc.org' class="email button"><i class="bi bi-envelope-plus-fill"></i> Contact</a>
+          </footer>
         </div>
       </div>
 
-  
-      <div class="card">
-        <div class="cardPicture">
-          <img src="pictures\Ben_Bella.jpeg" alt="Ben">
+      <!--Footer-->
+      <footer id="shoe">
+        <div class="toes">
+          <h2 class="toe-tag">Developed By</h2>
+          <ul>
+            <li>Alex Kamke</li>
+            <li>Caden Joergens</li>
+            <li>Kaia Hansen</li>
+            <li>JJ Wertkin</li>
+            <li>Spencer Keith</li>
+          </ul>
         </div>
 
-        <div class="cardBody">
-          <h2>Ben Bella</h2>
-          <h4>Vice President</h4>
-          <p>Safety & Compliance Officer, Eau Claire Energy Cooperative</p>
-          <p>https://www.linkedin.com/in/ben-bella-43934648/</p>
-          <div class="cardFooter">
-          <footer>
-          <button class="button">Contact</button></footer></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card">
-        <div class="cardPicture">
-          <img src="pictures\Adam_Bourget.jpeg" alt="Adam">
+        <div class="toes">
+          <h2 class="toe-tag">Report an Issue</h2>
+          <p>report an issue on <a href="https://github.com/mrrobots2021/DRSV" target="_blank"> <i class="bi bi-github" aria-label="github"></i> github</a>
         </div>
 
-        <div class="cardBody">
-          <h2>Adam Bourget</h2>
-          <h4>Secretary</h4>
-          <p>Environmental Engineering Specialist, Nestle Nutrition.</p>
-          <p>https://www.facebook.com/adam.bourget.3</p>
-          <div class="cardFooter">
-          <footer>
-          <button class="button">Contact</button></footer></div>
+        <div class="toes">
+          <h2 class="toe-tag">Contact</h2>
+    
+          <ul>
+              <li>800 Wisconsin Street</li>
+              <li>Banbury Place, Bldg D2-401</li>
+              <li>Mail Box 9</li>
+              <li>Eau Claire, WI  54703-3606</li>
+              <li>Phone: 715.836.2918  ext. 16</li>
+              <li>Fax: 715.836.2886</li>
+          </ul>
         </div>
-      </div>
-
-    <div class="card">
-      <div class="cardPicture">
-        <img src="pictures\Brian_Drollinger.jpeg" alt="Brian">
-      </div>
-
-      <div class="cardBody">
-        <h2>Brian Drollinger</h2>
-        <h4>Treasurer</h4>
-        <p>Director of Risk Management, Safety and Sustainability, University of Wisconsin-Eau Claire.</p>
-        <p>drollibk@uwec.edu</p>
-        <div class="cardFooter">
-        <footer>
-        <button class="button">Contact</button></footer></div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class = "container">
-   <div class="card">
-    <div class="cardPicture">
-      <img src="pictures\Chris_Straight.jpeg" alt="Chris">
-    </div>
-
-    <div class="cardBody">
-      <h2>Chris Straight</h2>
-      <h4>Administrator</h4>
-      <p>Senior Planner, West Central Wisconsin Regional Planning Commission.</p>
-      <p>chris@wcwrpc.org</p>
-      <div class="cardFooter">
-      <footer>
-      <button class="button">Contact</button></footer></div>
-    </div>
-  </div>
-
-
- 
-    <div class="card">
-      <div class="cardPicture">
-        <img src="pictures\Aimee_Nesseth.jpeg" alt="Aimee">
-      </div>
-  
-      <div class="cardBody">
-          <h2>Aimee Nesseth</h2>
-          <h4>Coordinator</h4>
-          <p>Coordinator, Northwest WI Healthcare Emergency Readiness Coalition.</p>
-          <p>coordinator@nwwiherc.org</p>
-          <div class="cardFooter">
-          <footer>
-          <button class="button">Contact</button></footer></div>
-    </div>
-   </div>
-  </div>
-</div>
- 
-
-
-<footer class="footer">
-        
-  <p>Icons from <a href="https://icons8.com/" target="_blank">Icons8</a></p>
-  <p>Site Developed by: Caden Joergens Kaia Hansen JJ Wertkin  Spencer Keith</p>
-  <p>report an issue on <a href="https://github.com/mrrobots2021/DRSV" target="_blank">github</a></p>
-
-</footer>
-
-</body>
+      </footer>
+  </body>
 </html>
