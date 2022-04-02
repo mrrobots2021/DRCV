@@ -1,117 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>DRCV</title>
+    <link href="NavBarStyle.css" rel="stylesheet" type="text/css" />
+    <link href="Upcomming.css" rel="stylesheet"/>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Continuity Resources</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="NavBarStyle.css">
-    <link rel="stylesheet" href="upcomming.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"></head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body style="margin:0;">
 
-<body>
-    <!-- Nav Bar -->
     <header class="header">
-        <div class="brand">
-          <div id="nav-burger" class="nav-burger is-active">
-            <img src="pictures/hamburger-button.png" alt="Menu" class="nav-icon">
-          </div>
-          <a href="Home.html" class="brand-logo">
-            <img src="pictures/drcvlogo.jpg" alt="Logo">
-          </a>
-          <div class="brand-text">
-            Disaster Ready Chippewa Valley
+
+      <div class="brand">
+        <div id="nav-burger" class="nav-burger is-active">
+          <i class="bi bi-list"></i>
+        </div>
+        <a href="Home.html" class="brand-logo">
+          <img src="pictures/drcvlogo.jpg" alt="Logo">
+        </a>
+        <div class="brand-text">
+          Disaster Ready Chippewa Valley
+        </div>
+      </div>
+
+      <!--horizontal navbar-->
+      <nav id="nav" class="nav">
+        <a href="Home.html" class="nav-link"><i class="bi bi-house-fill"></i> Home</a>
+        <a href="AboutUs.html" class="nav-link"><i class="bi bi-person-circle"></i> About Us</a>
+        <a href="ContactUs.html" class="nav-link"><i class="bi bi-send"></i> Contact Us</a>
+        <a href="Upcomming.html" class="nav-link"><i class="bi bi-megaphone"></i> Upcomming Events</a>
+        <a href="DRCVMembership.html" class="nav-link"><i class="bi bi-key"></i> DRCV Membership</a>
+        
+        <!--vertical navbar-->
+        <div id="hide">
+          <a href="KeyWebsites.html"><i class="bi bi-cone-striped"></i> Key Websites</a>
+          <a href="EmailList.html"><i class="bi bi-mailbox"></i> Email List </a>
+          <a href="ContinuityResources.html"><i class="bi bi-diagram-3"></i> Continutiy Planning</a>
+          <a href="PastEvents.html"><i class="bi bi-calendar-event"></i> Past Workshops</a>
+        </div>
+        
+        <!--vertical dropdown from horizontal navbar-->
+        <div class="dropdown">
+          <button><i class="bi bi-bookmark-star"></i> Resources</button>
+          <div class="dropdown-content">
+            <a href="KeyWebsites.html"><i class="bi bi-cone-striped"></i> Key Websites</a>
+            <a href="EmailList.html"><i class="bi bi-mailbox"></i> Email List</a>
+            <a href="ContinuityResources.html"><i class="bi bi-diagram-3"></i> Continutiy Planning</a>
+            <a href="PastEvents.html"><i class="bi bi-calendar-event"></i> Past Workshops</a>
           </div>
         </div>
-        <nav id="nav" class="nav">
-          <a href="Home.html" class="nav-link">Home</a>
-          <a href="AboutUs.html" class="nav-link">About Us</a>
-          <a href="ContactUs.html" class="nav-link">Contact Us</a>
-          <a href="DRCVMembership.html" class="nav-link">DRCV Membership</a>
-  
-          <div id="hide">
-            <a href="KeyWebsites.html">Key Websites</a>
-            <a href="EmailList.html">Email List</a>
-            <a href="ContinuityResources.html">Continutiy Planning</a>
-          </div>
-      
-          <div class="dropdown">
-            <button>Resources</button>
-            <div class="dropdown-content">
-            <a href="KeyWebsites.html">Key Websites</a>
-            <a href="EmailList.html">Email List</a>
-            <a href="ContinuityResources.html">Continutiy Planning</a>
-            </div>
-          </div>
-        </nav>
-      </header>
-  
-      <script src="script.js"></script>
-      <!-- End Nav Bar -->
+      </nav>
+    </header>
+    <script src="script.js"></script>
+    <!--End Nav Bar-->
 
     <div class="header-box">
-        <h1 class="center-text" >Upcomming Events</h1>
-    </div>
-    <div class="flex-flyer">
-        <img class="logo" src= "pictures/fallSeminar.jpeg" alt="Logo">
+        <h1 class="center-text">Upcomming Events</h1>
     </div>
 
-    <div class="flex-container">
+    <div class="flyer">
+      <img src= "pictures/fallSeminar.jpg" alt="flyer">
+      <!--⚠️ UNCOMMENT WHEN NO EVENT-->
+      <!-- 
+      <div class="hiden-txt">
+        <a href="PastEvents.html">No Upcoming Events.</a>
+      </div>
+      -->
+      <!--⚠️ END COMMENT ON LINE ABOVE-->
+    </div>
+
+    <div class="grid-container">
         
-        <div class="card" id="agenda">
-            <h2><b>Agenda: Cybersecurity</b></h2>
-            <hr/>
-            <dl>
-              <dt><h4>9:00  AM<span class="tab"></span>Welcome</h4></dt>
-              <dd>Bruce King, Government Affairs Director, REALTORS Association of Northwestern WI</dd>
-              <dt><h4>9:10 AM<span class="tab"></span>The Research on Cybersecurity Risks in the Public Company</h4></dt>
-              <dd>Dr. Jidong Zhang & Sara Hansen, UW-Eau Claire College of Business</dd>
-              <dt><h4>9:50 AM<span class="tab"></span>Break </h4></dt>
-              <dt><h4>10:00 AM<span class="tab"></span>Wisconsin Business Emergency Operations Center (BEOC)</h4></dt>
-              <dd>Laura Reinke, Community Preparedness Coordinator & Drew Werner, Critical Infrastructure Planning Specialist, Wisconsin Emergency Management</dd>
-              <dt><h4>10:45 AM<span class="tab"></span>Wrap-up</h4></dt>
-              <dt><h4>11:00 AM<span class="tab"></span>DRCV 2020 Annual Meeting </h4></dt>
-            </dl>
-        </div>
+      <div class="card" id="agenda">
+        <h2><b>Agenda: Cybersecurity</b></h2>
+        <hr/>
+        <dl>
+          <dt><h4>9:00  AM<span class="tab"></span>Welcome</h4></dt>
+          <dd>Bruce King, Government Affairs Director, REALTORS Association of Northwestern WI</dd>
+          <dt><h4>9:10 AM<span class="tab"></span>The Research on Cybersecurity Risks in the Public Company</h4></dt>
+          <dd>Dr. Jidong Zhang & Sara Hansen, UW-Eau Claire College of Business</dd>
+          <dt><h4>9:50 AM<span class="tab"></span>Break </h4></dt>
+          <dt><h4>10:00 AM<span class="tab"></span>Wisconsin Business Emergency Operations Center (BEOC)</h4></dt>
+          <dd>Laura Reinke, Community Preparedness Coordinator & Drew Werner, Critical Infrastructure Planning Specialist, Wisconsin Emergency Management</dd>
+          <dt><h4>10:45 AM<span class="tab"></span>Wrap-up</h4></dt>
+          <dt><h4>11:00 AM<span class="tab"></span>DRCV 2020 Annual Meeting </h4></dt>
+        </dl>
+      </div>
    
-        <div class="card" id="when">
-            <h2><b><i class="bi bi-calendar2-check" aria-label="check calendar"></i></b> When</h2>
-            <hr/>
-            <h3>December 8, 2021</h3>
-            <h3>Registration is required by Decmber 3rd</h3>
-        </div>
+      <div class="card" id="when">
+        <h2><b><i class="bi bi-calendar3" aria-label="calendar"></i></b> When</h2>
+        <hr/>
+        <h3>December 8, 2021</h3>
+        <h3>Registration is required by Decmber 3rd</h3>
+      </div>
 
-        <div class="card" id="where">      
-            <h2><b><i class="bi bi-geo-alt" aria-label="location"></i></b> Location</h2>
-            <hr/>
-            <h3>conducted virtually via Zoom</h3>
-        </div>
+      <div class="card" id="where">      
+        <h2><b><i class="bi bi-geo-alt" aria-label="location"></i></b> Location</h2>
+        <hr/>
+        <h3>conducted virtually via Zoom</h3>
+      </div>
     
-        <div class="card" id="register">
-            <h2><b><i class="bi bi-clipboard-check" aria-label="rsvp"></i></b> Register</h2>
-            <hr/>
-            <h3><mark>Pre-Registration Required:</mark> <a href="https://www.surveymonkey.com/survey-closed/?sm=z28nFBABUW5frhXVVtkmBYg2zdke_2BZooiPMbPt1PN0vabRIHI7NEeWRrLYOz68msUMxek2k_2FoTv3wx1OVOF0bqHGBVu3Pkj1mNpH2zg_2FkwI_3D" target="_blank">  Register Here!</a></h3>
-            <h4>Registration is required to receive the Zoom weblink by email on December 3rd.</h4>
-            <h4>This event is Free</h4>
-        </div>
+      <div class="card" id="register">
+        <h2><b><i class="bi bi-clipboard-check" aria-label="rsvp"></i></b> Register</h2>
+        <hr/>
+        <h3><mark>Pre-Registration Required:</mark> <a href="https://www.surveymonkey.com/survey-closed/?sm=z28nFBABUW5frhXVVtkmBYg2zdke_2BZooiPMbPt1PN0vabRIHI7NEeWRrLYOz68msUMxek2k_2FoTv3wx1OVOF0bqHGBVu3Pkj1mNpH2zg_2FkwI_3D" target="_blank">  Register Here!</a></h3>
+        <h4>Registration is required to receive the Zoom weblink by email on December 3rd.</h4>
+        <h4>This event is Free</h4>
+      </div>
     
     </div>
-    <footer class="footer">
-        <div class="toes">
-            <p>Icons from <a href="https://icons8.com/" target="_blank">Icons8</a></p>
-        </div>
-        <div class="toes">
-            <p>Site Developed by:  Alex Kamke, Caden Joergens, Kaia Hansen, JJ Wertkin,  Spencer Keith</p>
-        </div>
-        <div class="toes">
-            <p><i class="bi-github" role="img" aria-label="GitHub"></i> report an issue on <a href="https://github.com/mrrobots2021/DRSV" target="_blank">github</a></p>
-        </div>
 
+
+    <!--Start Footer-->
+    <footer id="shoe">
+      <div class="toes">
+        <h2 class="toe-tag">Developed By</h2>
+        <ul>
+          <li>Alex Kamke</li>
+          <li>Caden Joergens</li>
+          <li>Kaia Hansen</li>
+          <li>JJ Wertkin</li>
+          <li>Spencer Keith</li>
+        </ul>
+      </div>
+
+      <div class="toes">
+        <h2 class="toe-tag">Report an Issue</h2>
+        <p>report an issue on <a href="https://github.com/mrrobots2021/DRSV" target="_blank"> <i class="bi bi-github" aria-label="github"></i> github</a>
+      </div>
+
+      <div class="toes">
+        <h2 class="toe-tag">Contact</h2>
+
+        <ul>
+            <li>800 Wisconsin Street</li>
+            <li>Banbury Place, Bldg D2-401</li>
+            <li>Mail Box 9</li>
+            <li>Eau Claire, WI  54703-3606</li>
+            <li>Phone: 715.836.2918  ext. 16</li>
+            <li>Fax: 715.836.2886</li>
+        </ul>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
