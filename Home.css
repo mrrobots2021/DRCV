@@ -1,15 +1,19 @@
 *{
-  font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+body {
+    background-color: rgb(248,244,220);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 h2{
   font-size: x-large;
 }
 
-/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
-/*       elements ▲ ▲ ▲          classes ▼ ▼ ▼
-/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
-
+/*Slogan box*/
 .slogan {
   display:flex;
   border: 2px solid black;
@@ -31,11 +35,13 @@ h2{
   padding: 10px;
 }
 
+/*Event Bar*/
 .events-txt {
   flex: 0 1 50%;
   margin: 10px;
   font-size: 2vw;
   text-align:center; 
+
 }
 
 .events-link {
@@ -44,8 +50,21 @@ h2{
   font-size: 2vw;
   color:blue;
   text-align: center; 
+  border-left: 2px solid white;
+}
+.events-link a{
+  color: white;
 }
 
+.events {
+  margin:10px 0px 10px 0px;
+  display:flex;
+  color:white;
+  background-color: rgb(7,38,100);
+}
+
+
+/*Mission Box*/
 .mission {
   box-sizing: border-box;
   color:white;
@@ -70,37 +89,52 @@ h2{
   padding: 10px;
   box-sizing: border-box;
   text-decoration: none;
+  font-size: larger;
+  text-align: center;
 }
 
 .card {
-  text-decoration: none;
-  box-sizing: content-box;
+  box-sizing: border-box;
   background-color: silver;
   padding: 1rem;
-  text-align: center;
-  font-size: larger;
   border-radius:5px;
+  color:rgba(0, 0, 0, 0.699) ;
+}
+
+.card a:link {
+  color: rgba(0, 0, 0, 0.699);
+  text-decoration: none;
+}
+
+.card a:visited {
+  color: rgba(0, 0, 0, 0.699);
+  text-decoration: none;
+}
+.card a:active {
+  color: rgba(0, 0, 0, 0.699);
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 .card:hover{
   background-color: rgb(28, 60, 122);
-  color:white;
-  /*change images to white*/
+  color:white
 }
 
-.grid-imgs {
-  box-sizing: content-box;
-  vertical-align: baseline;
-  justify-content: center;
-  margin: 0.5rem;
+.card .bi {
+  font-size: 3rem;
 }
 
 .card h4{
   font-size: larger;
-  
 }
 
-@media screen and (max-width:50rem) {
+@media screen and (max-width:60rem) {
   .grid-container {
     grid-template-columns: auto auto;
   }
@@ -114,18 +148,7 @@ h2{
 
 
 
-/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
-/*       pseudoclasses ▲ ▲ ▲           id ▼ ▼ ▼
-/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
-
-#events {
-  margin:10px 0px 10px 0px;
-  display:flex;
-  color:white;
-  background-color: rgb(7,38,100);
-}
-
-
+/*Video*/
 .video-strip {
   margin: 10px;
   display: flex;
@@ -155,33 +178,6 @@ h2{
     width: auto;
   }
 }
-.footer {
-  display:flex;
-  align-items:center;
-  justify-content: space-around;
-  flex-direction: row;
-  text-align: center;
-  color:white;
-  background-color: rgb(7,38,100);
-  
-}
-@media screen and (max-width:40rem){
-  .footer{
-    flex-direction: column;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

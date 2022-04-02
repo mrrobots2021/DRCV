@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>DRCV</title>
-    <link rel="stylesheet" href="NavBarStyle.css">
-    <link rel="stylesheet" href="Home.css">
-    
-    <link rel="icon" href="drcvlogo.jpg">
-</head>
+    <link href="NavBarStyle.css" rel="stylesheet" type="text/css" />
+    <link href="Home.css" rel="stylesheet"/>
 
-<body style="background-color: white">
-
-    <!-- Nav Bar -->
+  </head>
+  <body style="margin:0;">
     <header class="header">
-        <div class="brand">
-          <div id="nav-burger" class="nav-burger is-active">
-            <img src="pictures/hamburger-button.png" alt="Menu" class="nav-icon">
-          </div>
-          <a href="Home.html" class="brand-logo">
-            <img src="pictures/drcvlogo.jpg" alt="Logo">
-          </a>
-          <div class="brand-text">
-            Disaster Ready Chippewa Valley
+      <div class="brand">
+        <div id="nav-burger" class="nav-burger is-active">
+          <i class="bi bi-list"></i>
+        </div>
+        <a href="Home.html" class="brand-logo">
+          <img src="pictures/drcvlogo.jpg" alt="Logo">
+        </a>
+        <div class="brand-text">
+          Disaster Ready Chippewa Valley
+        </div>
+      </div>
+
+      <nav id="nav" class="nav">
+        <a href="Home.html" class="nav-link"><i class="bi bi-house-fill"></i> Home</a>
+        <a href="AboutUs.html" class="nav-link"><i class="bi bi-person-circle"></i> About Us</a>
+        <a href="ContactUs.html" class="nav-link"><i class="bi bi-send"></i> Contact Us</a>
+        <a href="Upcomming.html" class="nav-link"><i class="bi bi-megaphone"></i> Upcomming Events</a>
+        <a href="DRCVMembership.html" class="nav-link"><i class="bi bi-key"></i> DRCV Membership</a>
+        
+        <div id="hide">
+          <a href="KeyWebsites.html"><i class="bi bi-cone-striped"></i> Key Websites</a>
+          <a href="EmailList.html"><i class="bi bi-mailbox"></i> Email List </a>
+          <a href="ContinuityResources.html"><i class="bi bi-diagram-3"></i> Continutiy Planning</a>
+          <a href="PastEvents.html"><i class="bi bi-calendar-event"></i> Past Workshops</a>
+        </div>
+    
+        <div class="dropdown">
+          <button><i class="bi bi-bookmark-star"></i> Resources</button>
+          <div class="dropdown-content">
+            <a href="KeyWebsites.html"><i class="bi bi-cone-striped"></i> Key Websites</a>
+            <a href="EmailList.html"><i class="bi bi-mailbox"></i> Email List</a>
+            <a href="ContinuityResources.html"><i class="bi bi-diagram-3"></i> Continutiy Planning</a>
+            <a href="PastEvents.html"><i class="bi bi-calendar-event"></i> Past Workshops</a>
           </div>
         </div>
-        <nav id="nav" class="nav">
-          <a href="Home.html" class="nav-link">Home</a>
-          <a href="AboutUs.html" class="nav-link">About Us</a>
-          <a href="ContactUs.html" class="nav-link">Contact Us</a>
-          <a href="DRCVMembership.html" class="nav-link">DRCV Membership</a>
-  
-          <div id="hide">
-            <a href="KeyWebsites.html">Key Websites</a>
-            <a href="EmailList.html">Email List</a>
-            <a href="ContinuityResources.html">Continutiy Planning</a>
-          </div>
-      
-          <div class="dropdown">
-            <button>Resources</button>
-            <div class="dropdown-content">
-            <a href="KeyWebsites.html">Key Websites</a>
-            <a href="EmailList.html">Email List</a>
-            <a href="ContinuityResources.html">Continutiy Planning</a>
-            </div>
-          </div>
-        </nav>
-      </header>
-  
-      <script src="script.js"></script>
-      <!-- End Nav Bar -->
+      </nav>
+    </header>
+    <script src="script.js"></script>
 
     <div class="slogan">
         <div class="slogan-text">
@@ -59,7 +58,7 @@
         </div>
     </div>
 
-    <div id="events">
+    <div class="events">
         <div class="events-txt">
             Upcoming Events
         </div>
@@ -67,54 +66,51 @@
         <div class="events-link">
             <a href="Upcomming.html"> Click here for Upcoming Events</a>
         </div>
+     
     </div>
     
     <div class="grid-container">
-       
-        <div class="card" id="about">
-             <a href="AboutUs.html" style="text-decoration: none; color:black">
-            <div class= "grid-imgs">
-                <img src= "pictures\home.png" alt="Logo">
+
+      <div class="card-box" id="about">
+          <a href="AboutUs.html" style="text-decoration: none;">
+            <div class="card">
+                    <i class="bi bi-info-circle" aria-label="info"></i>
+                    <h4>What We Do</h4>
+                    <p>Learn about what we do, who we are, and our mission</p>
             </div>
-            <h4>What We Do</h4>
-            <p>Learn about what we do, who we are, and our mission</p>
-          </a>  
+          </a> 
         </div>
 
-        <div class="card" id ="event">
-            <a href="Upcomming.html" style="text-decoration: none; color:black">
-            <div class= "grid-imgs">
-                <img src= "pictures\event.png" alt="Logo">
-                
-            </div>
-            <h4>Workshops</h4>
-            <p>Find out about upcomming events and browse past seminars</p>
-            </a>
-        </div>
+      <div class="card-box" id ="event">
+          <a href="Upcomming.html" style="text-decoration: none;">
+              <div class ="card">
+                <i class="bi bi-calendar3" aria-label="calendar"></i>
+                <h4>Workshops</h4>
+                <p>Find out about upcomming events and browse past seminars</p>
+              </div>
+          </a>
+      </div>
 
-        <div class="card" id="resources">
-            <a href="KeyWebsites.html" style="text-decoration: none; color:black">
-            <div class= "grid-imgs">
-                <img src= "pictures\about.png" alt="Logo">
-                
+      <div class="card-box" id="resources">
+          <a href="KeyWebsites.html" style="text-decoration: none;">
+            <div class= "card">
+              <i class="bi bi-bookmark-star" aria-label="flag"></i>
+              <h4>Resources</h4>
+              <p>Access a collection of websites with prepardness info</p>
             </div>
-            <h4>Resources</h4>
-            <p>Access a collection of websites with prepardness info</p>
-            </a>
-        </div>  
+          </a>
+      </div>  
 
-        <div class="card" id="mail">
-            <a href="EmailList.html" style="text-decoration: none; color:black">
-            <div class= "grid-imgs">
-                <img src= "pictures\email.png" alt="Logo">
-                
-            </div>
+      <div class="card-box" id="mail">
+        <a href="EmailList.html" style="text-decoration: none;">
+          <div class= "card">
+            <i class="bi bi-envelope-paper" aria-label="open mail"></i>
             <h4>Stay Informed</h4> 
             <p>Stay up to date by joining our mailing list or become a member</p>
+          </div>
         </a>
-        </div>  
-     
-      </div>
+      </div>  
+    </div>
 
     <div class="mission">
         <h2>Our Mission</h2>
@@ -134,16 +130,37 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Zp8pSqGsVZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <footer class="footer">
-        
-        <p>Icons from <a href="https://icons8.com/" target="_blank">Icons8</a></p>
-        <p>Site Developed by: Caden Joergens Kaia Hansen JJ Wertkin  Spencer Keith</p>
-        <p>report an issue on <a href="https://github.com/mrrobots2021/DRSV" target="_blank">github</a></p>
+    <!--Footer-->
+    <footer id="shoe">
+      <div class="toes">
+        <h2 class="toe-tag">Developed By</h2>
+        <ul>
+          <li>Alex Kamke</li>
+          <li>Caden Joergens</li>
+          <li>Kaia Hansen</li>
+          <li>JJ Wertkin</li>
+          <li>Spencer Keith</li>
+        </ul>
+      </div>
 
+      <div class="toes">
+        <h2 class="toe-tag">Report an Issue</h2>
+        <p>report an issue on <a href="https://github.com/mrrobots2021/DRSV" target="_blank"> <i class="bi bi-github" aria-label="github"></i> github</a>
+      </div>
+
+      <div class="toes">
+        <h2 class="toe-tag">Contact</h2>
+  
+        <ul>
+            <li>800 Wisconsin Street</li>
+            <li>Banbury Place, Bldg D2-401</li>
+            <li>Mail Box 9</li>
+            <li>Eau Claire, WI  54703-3606</li>
+            <li>Phone: 715.836.2918  ext. 16</li>
+            <li>Fax: 715.836.2886</li>
+        </ul>
+      </div>
     </footer>
 
-</body>
-
+  </body>
 </html>
-
-
