@@ -15,24 +15,27 @@ h2{
 
 /*Slogan box*/
 .slogan {
-  display:flex;
-  border: 2px solid black;
+  display: flex;
   background-image: url("pictures/FireFighter1.jpg");
-  background-size: cover;
-  height: 350px;
+  background-repeat: no-repeat;
+  background-size: 100%;
   background-position: center;
-  justify-content:center;
-  align-items: center;
-  text-align: center;
+  padding: 2%;
+  align-content: center;
+  justify-content: center;
 }
 
-.slogan-text {
-  font-weight:bolder;
-  color:black;
-  font-size: 3vw;
-  background-color: rgba(252, 250, 247, 0.507);
-  opacity:0.8;
-  padding: 10px;
+
+.slogan .slogan-text {
+  display: block;
+  text-align: center;
+  width: 70%;
+  padding: 1rem 2rem;
+  font-size: xxx-large;
+  background-color: rgba(201, 196, 196, 0.8);
+  color: black;
+  border: solid 4px rgb(160, 157, 157);
+  box-shadow: 0 4px 8px 0 grey;
 }
 
 /*Event Bar*/
