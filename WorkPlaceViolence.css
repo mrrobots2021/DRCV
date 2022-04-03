@@ -1,18 +1,12 @@
 *{
-    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  }
-  
-  
-
-
+  font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
   .ConHeading{
     text-align:center;
     margin-top: 60px;
     color:rgba(0,35,99,1);
     font-weight:900;
-    font-size:50px;
-    font-family:'Open-Sans';
-   
+    font-size:50px;   
 }
 
 

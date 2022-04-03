@@ -10,14 +10,6 @@ body {
   background-color: rgb(252, 250, 246);
 }
 
-
-h1 {
-  font-size: 42px;
-  background-color: rgb(252, 250, 246);
-  border: solid 2px rgb(7, 38, 100);
-  border-radius: 20%;
-}
-
 /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
 /*       elements ▲ ▲ ▲           classes ▼ ▼ ▼
 /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
@@ -25,13 +17,25 @@ h1 {
 
 
 .header-box {
+  display: flex;
   background-image: url("pictures/meeting.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  border: solid 4px rgb(7, 38, 100);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 2%;
+  align-content: center;
+  justify-content: center;
+}
+.header-box .center-text{
+  display: block;
+  text-align: center;
+  width: max-content;
+  padding: 1rem 2rem;
+  font-size: xxx-large;
+  background-color: rgba(201, 196, 196, 0.8);
+  color: black;
+  border: solid 4px rgb(160, 157, 157);
+  box-shadow: 0 4px 8px 0 grey;
 }
 
 .deck {
@@ -54,10 +58,6 @@ h1 {
   transition: 0.3s;
 }
 
-.center-text {
-  display: block;
-  text-align: center;
-}
 
 /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
 /*       classes ▲ ▲ ▲           pseudoclasses ▼ ▼ ▼
@@ -76,3 +76,5 @@ h1 {
       width: 80vw;
   }
 }
+
+

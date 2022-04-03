@@ -1,6 +1,6 @@
 *{
-    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  }
+  font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
   
 
 .areyouready img{
@@ -15,7 +15,6 @@
   color:rgb(0, 0, 0);
   font-size:15px;
   margin:0 1rem 0 1rem;
-  font-family:'Open-Sans';
   text-align:center;
 }
 .keywebsites h5, .keywebsites h4{
@@ -23,7 +22,6 @@
   color:rgba(0,35,99,1);
   font-weight:900;
   font-size:20px;
-  font-family:'Open-Sans';
   margin: 1.5rem;
 }
 
@@ -37,8 +35,3 @@
   font-size:15px;
 }
 
-
-
-
-
- 
