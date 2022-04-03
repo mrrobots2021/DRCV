@@ -3,57 +3,41 @@
   }
   
 
-  .areyouready img{
-      display:grid;
-      float:inline-end;
-      max-width: 30vw;
-      max-height:30vw;
-      margin-top: 40px;
-  }
+.areyouready img{
+  display:grid;
+  float:inline-end;
+  max-width: 30vw;
+  max-height:30vw;
+  margin-top: 40px;
+}
 
-  .KeyWebsites{
-      color:rgb(0, 0, 0);
-      font-size:15px;
-      margin-left:40px;
-      font-family:'Open-Sans';
-      text-align:center;
+.keywebsites{
+  color:rgb(0, 0, 0);
+  font-size:15px;
+  margin:0 1rem 0 1rem;
+  font-family:'Open-Sans';
+  text-align:center;
+}
+.keywebsites h5, .keywebsites h4{
+  text-align:left;
+  color:rgba(0,35,99,1);
+  font-weight:900;
+  font-size:20px;
+  font-family:'Open-Sans';
+  margin: 1.5rem;
+}
 
-    
-  }
-  .KeyWebsites-headings{
-      text-align:left;
-        color:rgba(0,35,99,1);
-        font-weight:900;
-        font-size:20px;
-        font-family:'Open-Sans';
-  }
-  .KeyWebsites a{
-      color:black;
-    
-  }
+.keywebsites a{
+  color:black;
+}
 
-  .KeyWebsites-ul{
-      
-       text-align:left;
-        font-size:15px;
-  }
+.keywebsites ul{
+  line-height:200%;
+  text-align:left;
+  font-size:15px;
+}
 
 
-  .footer {
-    display:flex;
-    align-items:center;
-    justify-content: space-around;
-    flex-direction: row;
-    text-align: center;
-    color:white;
-    background-color: rgb(7,38,100);
-    
-  }
-  @media screen and (max-width:40rem){
-    .footer{
-      flex-direction: column;
-    }
-  }
 
 
 
