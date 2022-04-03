@@ -50,7 +50,7 @@ body {
     margin: 12px auto;
     display: grid;
     grid-template-areas: 
-    '. flyer flyer.'
+    '. flyer flyer .'
     'name name name name'
     'brief brief brief brief'
     'lessons lessons lessons lessons'
@@ -140,7 +140,7 @@ body {
 @media screen and (max-width:60rem) {
     .event-container{
         grid-template-areas: 
-        '. flyer flyer.'
+        '. flyer flyer .'
         'name name name name'
         'brief brief brief brief'
         'lessons lessons lessons lessons'
