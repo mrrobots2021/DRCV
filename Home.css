@@ -93,8 +93,6 @@ h2{
   text-decoration: none;
   font-size: larger;
   text-align: center;
-    flex-grow: 1;
-  flex-shrink: 1;
 }
 
 .card {
@@ -103,8 +101,7 @@ h2{
   padding: 1rem;
   border-radius:5px;
   color:rgba(0, 0, 0, 0.699) ;
-  flex-grow: 1;
-  flex-shrink: 1;
+  height: 100%
 }
 
 .card a:link {
