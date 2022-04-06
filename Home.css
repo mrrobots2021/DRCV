@@ -10,7 +10,7 @@ body {
 }
 
 h2{
-  font-size: x-large;
+  font-size: 2rem;
 }
 
 /*Slogan box*/
@@ -18,9 +18,9 @@ h2{
   display: flex;
   background-image: url("pictures/FireFighter1.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
-  padding: 2%;
+  padding: 5%;
   align-content: center;
   justify-content: center;
 }
@@ -29,9 +29,8 @@ h2{
 .slogan .slogan-text {
   display: block;
   text-align: center;
-  width: 70%;
-  padding: 1rem 2rem;
-  font-size: xxx-large;
+  padding: 1rem 2.5rem;
+  font-size: 2.5rem;
   background-color: rgba(201, 196, 196, 0.8);
   color: black;
   border: solid 4px rgb(160, 157, 157);
@@ -94,6 +93,8 @@ h2{
   text-decoration: none;
   font-size: larger;
   text-align: center;
+    flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .card {
@@ -102,11 +103,15 @@ h2{
   padding: 1rem;
   border-radius:5px;
   color:rgba(0, 0, 0, 0.699) ;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .card a:link {
   color: rgba(0, 0, 0, 0.699);
   text-decoration: none;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .card a:visited {
