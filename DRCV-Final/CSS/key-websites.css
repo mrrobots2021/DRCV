@@ -1,0 +1,46 @@
+*{
+  font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+.areyouready{
+  margin:10px 0px 10px 0px;
+  width: 20%;
+  display:flex;
+  color:white;
+  overflow: hidden;
+  justify-content: center;
+  align-self: center;
+  
+  text-align: center;
+}
+.areyouready img{
+  object-fit:scale-down;
+  max-width: 90%;
+  display: block;
+}
+
+
+.keywebsites{
+  color:rgb(0, 0, 0);
+  font-size:15px;
+  margin:0 1rem 0 1rem;
+  text-align:center;
+}
+.keywebsites h5, .keywebsites h4{
+  text-align:left;
+  color:rgba(0,35,99,1);
+  font-weight:900;
+  font-size:20px;
+  margin: 1.5rem;
+}
+
+.keywebsites a{
+  color:black;
+}
+
+.keywebsites ul{
+  line-height:200%;
+  text-align:left;
+  font-size:15px;
+}
+

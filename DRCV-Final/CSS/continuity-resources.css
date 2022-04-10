@@ -1,0 +1,102 @@
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*       elements ▼ ▼ ▼
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+* {
+  font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*       elements ▲ ▲ ▲           classes ▼ ▼ ▼
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+
+
+.header-box {
+  display: flex;
+  background-image: url("/images/meeting-stock.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2%;
+  align-content: center;
+  justify-content: center;
+}
+.header-box .center-text{
+  display: block;
+  text-align: center;
+  width: max-content;
+  padding: 1rem 2rem;
+  font-size: xxx-large;
+  background-color: rgba(201, 196, 196, 0.8);
+  color: black;
+  border: solid 4px rgb(160, 157, 157);
+  box-shadow: 0 4px 8px 0 grey;
+}
+
+a.center-text{
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.card#general{grid-area: general;}
+.card#hazards{grid-area: hazard;}
+.card#violence{grid-area: violence;}
+.card#flu{grid-area: flu;}
+.card#other{grid-area: other;}
+
+.grid-container {
+  margin: 1rem 1rem 0;
+  display: grid;
+  grid-template-areas: 
+  'general general flu flu'
+  'general general hazard hazard'
+  'general general violence violence'
+  'general general other other';
+}
+
+.card {
+  background-color: ghostwhite;
+  margin: 1rem;
+  border: solid 1px rgb(7,38,100);
+  border-radius: 10px;
+  padding: .5rem 1rem 1rem 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*       classes ▲ ▲ ▲           pseudoclasses ▼ ▼ ▼
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}  
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*       pseudoclasses ▲ ▲ ▲           responsive design ▼ ▼ ▼
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+@media screen and (max-width: 1280px) {
+  .grid-container {
+    grid-template-areas: 
+    'general general general general'
+    'general general general general'
+    'flu flu hazard hazard'
+    'violence violence other other';
+  }
+}
+@media screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-areas: 
+    'general general'
+    'general general'
+    'flu flu' 
+    'hazard hazard'
+    'violence violence' 
+    'other other';
+  }
+}

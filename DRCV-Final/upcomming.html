@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Upcomming Events</title>
+    <link href="CSS/global-style.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/upcomming.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="images/drcvlogo.jpg">
+  </head>
+  <body>
+
+    <header class="header">
+
+      <div class="brand">
+        <div id="nav-burger" class="nav-burger is-active">
+          <i class="bi bi-list"></i>
+        </div>
+        <a href="home.html" class="brand-logo">
+          <img src="images/drcvlogo.jpg" alt="Logo">
+        </a>
+        <div class="brand-text">
+          Disaster Ready Chippewa Valley
+        </div>
+      </div>
+
+      <!--horizontal navbar-->
+      <nav id="nav" class="nav">
+        <a href="home.html" class="nav-link"><i class="bi bi-house-fill"></i> Home</a>
+        <a href="about-us.html" class="nav-link"><i class="bi bi-person-circle"></i> About Us</a>
+        <a href="contact-us.html" class="nav-link"><i class="bi bi-send"></i> Contact Us</a>
+        <a href="upcomming.html" class="nav-link"><i class="bi bi-megaphone"></i> Upcomming Events</a>
+        <a href="membership.html" class="nav-link"><i class="bi bi-shield-check"></i> DRCV Membership</a>
+        
+        <!--vertical navbar-->
+        <div id="hide">
+          <a href="key-websites.html"><i class="bi bi-bookmark-star"></i> Key Websites</a>
+          <a href="email-list.html"><i class="bi bi-mailbox"></i> Email List </a>
+          <a href="continuity-resources.html"><i class="bi bi-diagram-3"></i> Continutiy Planning</a>
+          <a href="past-events.html"><i class="bi bi-calendar-event"></i> Past Workshops</a>
+        </div>
+        
+        <!--vertical dropdown from horizontal navbar-->
+        <div class="dropdown">
+          <button><i class="bi bi-journal-bookmark-fill"></i> Resources</button>
+          <div class="dropdown-content">
+            <a href="key-websites.html"><i class="bi bi-bookmark-star"></i> Key Websites</a>
+            <a href="emailList.html"><i class="bi bi-mailbox"></i> Email List</a>
+            <a href="continuity-resources.html"><i class="bi bi-diagram-3"></i> Continutiy Planning</a>
+            <a href="past-events.html"><i class="bi bi-calendar-event"></i> Past Workshops</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="script.js"></script>
+    <!--End Nav Bar-->
+
+    
+    <div class="header-box">
+      <h1 class="header-text">Upcomming Events</h1>
+    </div>
+      
+    <!--event flyer-->
+    <div class="flyer">
+      <img src= "images/fallSeminar.jpg" alt="flyer">
+      <!--⚠️ UNCOMMENT WHEN NO EVENT-->
+      <!-- 
+      <div class="hidden-txt">
+        <h2>No Upcoming Events:</h2>
+        <h3><a href="PastEvents.html">Click to view past events</a></h3>
+      </div> 
+      -->
+      <!--⚠️ END COMMENT ON LINE ABOVE-->
+    </div>
+      
+      <!--Card Deck-->
+    <div class="grid-container">
+      
+      <div class="card" id="agenda">
+        <h2 class="section-title"><b>Agenda: Cybersecurity</b></h2>
+        <hr/>
+        <dl>
+          <dt>9:00  AM<span class="tab"></span>Welcome</dt>
+          <dd>Bruce King,<i> Government Affairs Director, REALTORS Association of Northwestern WI</i></dd>
+          <dt>9:10 AM<span class="tab"></span>The Research on Cybersecurity Risks in the Public Company</dt>
+          <dd>Dr. Jidong Zhang & Sara Hansen,<i> UW-Eau Claire College of Business</i></dd>
+          <dt>9:50 AM<span class="tab"></span>Break </dt>
+          <dd> </dd>
+          <dt>10:00 AM<span class="tab"></span>Wisconsin Business Emergency Operations Center (BEOC)</dt>
+          <dd>Laura Reinke,<i> Community Preparedness Coordinator </i></dd>
+          <dd>Drew Werner,<i> Critical Infrastructure Planning Specialist, Wisconsin Emergency Management</i></dd>
+          <dt>10:45 AM<span class="tab"></span>Wrap-up</dt>
+          <dd> </dd>
+          <dt>11:00 AM<span class="tab"></span>DRCV 2020 Annual Meeting </dt>
+          <dd> </dd>
+        </dl>
+      </div>
+      
+      <div class="card" id="when">
+        <h2 class="section-title"><i class="bi bi-calendar3" aria-label="calendar"></i> When</h2>
+        <hr/>
+        <h3>December 8, 2021</h3>
+        <h4>Registration is required by Decmber 3rd</h4>
+      </div>
+      
+      <div class="card" id="where">      
+        <h2 class="section-title"><i class="bi bi-geo-alt" aria-label="location"></i> Location</h2>
+        <hr/>
+        <h3>Conducted virtually via Zoom</h3>
+      </div>
+      
+      <div class="card" id="register">
+        <h2 class="section-title"><i class="bi bi-clipboard-check" aria-label="rsvp"></i> Register</h2>
+        <hr/>
+        <h3>
+          <b>Pre-Registration Required:</b> <a href="https://www.surveymonkey.com/survey-closed/?sm=z28nFBABUW5frhXVVtkmBYg2zdke_2BZooiPMbPt1PN0vabRIHI7NEeWRrLYOz68msUMxek2k_2FoTv3wx1OVOF0bqHGBVu3Pkj1mNpH2zg_2FkwI_3D" target="_blank">  Register Here!</a>
+        </h3>
+        <h4>Registration is required to receive the Zoom weblink by email on December 3rd.</h4>
+        <h4>This event is Free</h4>
+      </div>
+      
+    </div>
+
+    <!--Start Footer-->
+    <footer id="shoe">
+      <div class="toes">
+        <h2 class="toe-tag">Developed By</h2>
+        <ul>
+          <li>Alex Kamke</li>
+          <li>Caden Joergens</li>
+          <li>Kaia Hansen</li>
+          <li>JJ Wertkin</li>
+          <li>Spencer Keith</li>
+        </ul>
+      </div>
+
+      <div class="toes">
+        <h2 class="toe-tag">Report an Issue</h2>
+        <p>report an issue on <a href="https://github.com/mrrobots2021/DRSV" target="_blank"> <i class="bi bi-github" aria-label="github"></i> github</a>
+      </div>
+
+      <div class="toes">
+        <h2 class="toe-tag">Contact</h2>
+
+        <ul>
+            <li>800 Wisconsin Street</li>
+            <li>Banbury Place, Bldg D2-401</li>
+            <li>Mail Box 9</li>
+            <li>Eau Claire, WI  54703-3606</li>
+            <li>Phone: 715.836.2918  ext. 16</li>
+            <li>Fax: 715.836.2886</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!--EVENT TEMPLATE
+  <div class="grid-container">
+        
+      <div class="card" id="agenda">
+        <h2 class="section-title"><b>Agenda: Cybersecurity</b></h2>
+        <hr/>
+        <dl>
+          <dt>⚠️TI:ME AM/PM⚠️<span class="tab"></span> ⚠️TOPIC⚠️</dt>
+          <dd>⚠️SPEAKER⚠️,<i>⚠️TITLE/BUISNESS⚠️</i></dd>
+          <dt>⚠️TI:ME AM/PM⚠️<span class="tab"></span> ⚠️TOPIC⚠️</dt>
+          <dd>⚠️SPEAKER⚠️<i> ⚠️TITLE/BUISNESS⚠️</i></dd>
+          <dt>⚠️TI:ME AM/PM⚠️<span class="tab"></span> ⚠️TOPIC⚠️</dt>
+          <dd>⚠️LEAVE_EMPTY OR DETAILS⚠️ </dd>
+          <dt>⚠️TI:ME AM/PM⚠️<span class="tab"></span> ⚠️TOPIC⚠️</dt>
+          <dd>⚠️SPEAKER⚠️,<i>⚠️TITLE/BUISNESS⚠️</i></dd>
+          <dd>⚠️SPEAKER⚠️,<i>⚠️TITLE/BUISNESS⚠️</i></dd>
+          <dt>⚠️TI:ME AM/PM⚠️<span class="tab"></span> ⚠️TOPIC⚠️</dt>
+          <dd>⚠️LEAVE_EMPTY OR DETAILS⚠️</dd>
+          <dt>⚠️TI:ME AM/PM⚠️<span class="tab"></span>  ⚠️TOPIC⚠️</dt>
+          <dd> </dd>
+        </dl>
+      </div>
+    
+      <div class="card" id="when">
+        <h2 class="section-title"><i class="bi bi-calendar3" aria-label="calendar"></i> When</h2>
+        <hr/>
+        <h3>⚠️MONTH DAY, YEAR⚠️</h3>
+        <h4>Registration is required by ⚠️MONTH DAY⚠️</h4>
+      </div>
+
+      <div class="card" id="where">      
+        <h2 class="section-title"><i class="bi bi-geo-alt" aria-label="location"></i> Location</h2>
+        <hr/>
+        <h3>⚠️LOCATION⚠️</h3>
+      </div>
+    
+      <div class="card" id="register">
+        <h2 class="section-title"><i class="bi bi-clipboard-check" aria-label="rsvp"></i> Register</h2>
+        <hr/>
+        <h3><b>Pre-Registration Required:</b> <a href="⚠️LINK⚠️" target="_blank">  Register Here!</a></h3>
+        <h4>Registration is required to receive the Zoom weblink by email on ⚠️MONTH, DAY⚠️.</h4>
+        <h4>This event is Free</h4>
+      </div>
+    
+    </div>
+-->

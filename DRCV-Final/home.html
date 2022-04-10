@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>DRCV</title>
+    <link href="CSS/global-style.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/home.css" rel="stylesheet"/>
+
+    <link rel="icon" type="image/x-icon" href="images/drcvlogo.jpg">
+  </head>
+  <body>
+
+    <header class="header">
+
+      <div class="brand">
+        <div id="nav-burger" class="nav-burger is-active">
+          <i class="bi bi-list"></i>
+        </div>
+        <a href="home.html" class="brand-logo">
+          <img src="images/drcvlogo.jpg" alt="Logo">
+        </a>
+        <div class="brand-text">
+          Disaster Ready Chippewa Valley
+        </div>
+      </div>
+
+      <!--horizontal navbar-->
+      <nav id="nav" class="nav">
+        <a href="home.html" class="nav-link"><i class="bi bi-house-fill"></i> Home</a>
+        <a href="about-us.html" class="nav-link"><i class="bi bi-person-circle"></i> About Us</a>
+        <a href="contact-us.html" class="nav-link"><i class="bi bi-send"></i> Contact Us</a>
+        <a href="upcomming.html" class="nav-link"><i class="bi bi-megaphone"></i> Upcomming Events</a>
+        <a href="membership.html" class="nav-link"><i class="bi bi-shield-check"></i> DRCV Membership</a>
+        
+        <!--vertical navbar-->
+        <div id="hide">
+          <a href="key-websites.html"><i class="bi bi-bookmark-star"></i> Key Websites</a>
+          <a href="email-list.html"><i class="bi bi-mailbox"></i> Email List </a>
+          <a href="continuity-resources.html"><i class="bi bi-diagram-3"></i> Continutiy Planning</a>
+          <a href="past-events.html"><i class="bi bi-calendar-event"></i> Past Workshops</a>
+        </div>
+        
+        <!--vertical dropdown from horizontal navbar-->
+        <div class="dropdown">
+          <button><i class="bi bi-journal-bookmark-fill"></i> Resources</button>
+          <div class="dropdown-content">
+            <a href="key-websites.html"><i class="bi bi-bookmark-star"></i> Key Websites</a>
+            <a href="email-list.html"><i class="bi bi-mailbox"></i> Email List</a>
+            <a href="continuity-resources.html"><i class="bi bi-diagram-3"></i> Continutiy Planning</a>
+            <a href="past-events.html"><i class="bi bi-calendar-event"></i> Past Workshops</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="script.js"></script>
+    <!--End Nav Bar-->
+
+    <div class="slogan">
+      <div class="slogan-text">
+          <p><b>If Our Businesses are Prepared,</br> Our Communities are Prepared</b></p>
+      </div>
+    </div>
+      
+      <div class="events">
+      <div class="events-txt">
+          Upcoming Events
+      </div>
+      <hr>
+      <div class="events-link">
+          <a href="upcomming.html"> Click here for Upcoming Events</a>
+      </div>
+      
+      </div>
+      
+      <div class="grid-container">
+      
+      <div class="card-box" id="about">
+        <a href="about-us.html" style="text-decoration: none;">
+          <div class="card">
+                  <i class="bi bi-info-circle" aria-label="info"></i>
+                  <h4>What We Do</h4>
+                  <p>Learn about what we do, who we are, and our mission</p>
+          </div>
+        </a> 
+      </div>
+      
+      <div class="card-box" id ="event">
+        <a href="upcomming.html" style="text-decoration: none;">
+            <div class ="card">
+              <i class="bi bi-calendar3" aria-label="calendar"></i>
+              <h4>Workshops</h4>
+              <p>Find out about upcomming events and browse past seminars</p>
+            </div>
+        </a>
+      </div>
+      
+      <div class="card-box" id="resources">
+        <a href="continuity-resources.html" style="text-decoration: none;">
+          <div class= "card">
+            <i class="bi bi-diagram-3" aria-label="flow chart"></i>
+            <h4>Continutiy Planning</h4>
+            <p>Templates and resources to aimed at developing a preparedness plan</p>
+          </div>
+        </a>
+      </div>  
+      
+      <div class="card-box" id="mail">
+      <a href="email-list.html" style="text-decoration: none;">
+        <div class= "card">
+          <i class="bi bi-envelope-paper" aria-label="open mail"></i>
+          <h4>Stay Informed</h4> 
+          <p>Stay up to date by joining our mailing list or become a member</p>
+        </div>
+      </a>
+      </div>  
+      </div>
+      
+      <div class="mission">
+      <h2>Our Mission</h2>
+      <p>If our businesses are prepared for disaster, then our communities are prepared.
+      That's where we come in. Our mission is to help local buisinesses prepare for the worst
+      by providing them instructional resources and guides on how to better prepare themselves
+      tokeep their assets and employees safe in times of emergency. Furthermore, By ensuring our
+      local buisinesses are prepared for when disaster strikes, we are able to help increase the
+      resiliancy of our community as a whole.</p>
+      </div>
+      
+      <div class="video-strip">
+      <div class="video-description">
+          <h2 id="description-header">Ready Business Video - Lessons Learned</h2>
+          <p id="description-text">North Dakota State University produced an excellent short video on why it is important for businesses to prepare for disasters.</p>
+      </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Zp8pSqGsVZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!--Start Footer-->
+    <footer id="shoe">
+      <div class="toes">
+        <h2 class="toe-tag">Developed By</h2>
+        <ul>
+          <li>Alex Kamke</li>
+          <li>Caden Joergens</li>
+          <li>Kaia Hansen</li>
+          <li>JJ Wertkin</li>
+          <li>Spencer Keith</li>
+        </ul>
+      </div>
+
+      <div class="toes">
+        <h2 class="toe-tag">Report an Issue</h2>
+        <p>report an issue on <a href="https://github.com/mrrobots2021/DRSV" target="_blank"> <i class="bi bi-github" aria-label="github"></i> github</a>
+      </div>
+
+      <div class="toes">
+        <h2 class="toe-tag">Contact</h2>
+
+        <ul>
+            <li>800 Wisconsin Street</li>
+            <li>Banbury Place, Bldg D2-401</li>
+            <li>Mail Box 9</li>
+            <li>Eau Claire, WI  54703-3606</li>
+            <li>Phone: 715.836.2918  ext. 16</li>
+            <li>Fax: 715.836.2886</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
