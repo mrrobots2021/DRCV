@@ -1,0 +1,25 @@
+*{
+  font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  .ConHeading{
+    text-align:center;
+    margin-top: 60px;
+    color:rgba(0,35,99,1);
+    font-weight:900;
+    font-size:50px;   
+}
+
+
+.summary{ 
+    padding-top: 40px;
+    padding-left:80px;
+    padding-right:80px;
+    text-align:left;
+}
+
+ol li{
+    font-size:14px;
+    margin:20px;
+    margin-right:300px;
+}
+
