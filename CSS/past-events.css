@@ -1,0 +1,149 @@
+/*overall*/
+* {
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+/*Top of screen*/
+.header-box {
+    display: flex;
+    background-image: url("/images/meeting.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+   
+    padding: 2%;
+    align-content: center;
+    justify-content: center;
+}
+
+.header-box .header-text{
+    display: block;
+    text-align: center;
+    width: max-content;
+    padding: 1rem 2rem;
+    font-size: xxx-large;
+    background-color: rgba(201, 196, 196, 0.8);
+    color: black;
+    border: solid 4px rgb(160, 157, 157);
+    box-shadow: 0 4px 8px 0 grey;
+}
+
+.events .bi{
+    font-size: larger;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+/*Event Grid*/
+.event-container {
+    margin: 12px auto;
+    display: grid;
+    grid-template-areas: 
+    '. flyer flyer .'
+    'name name name name'
+    'brief brief brief brief'
+    'lessons lessons lessons lessons'
+    'image image files files';
+}
+
+/*Cards*/
+.card {
+    display:flex;
+    background-color: ghostwhite;
+    margin: 20px;
+    border: solid 1px rgb(7,38,100);
+    border-radius: 10px;
+    padding: 10px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgb(7,38,100);
+} 
+
+/*Boxes*/
+
+/*flyer image*/
+/*Keep image in center and at a resonable scale*/
+.flyer {
+    grid-area: flyer;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding-bottom: 0.5rem;
+}
+/*Keep the picture scale and centered*/
+.flyer img{
+    object-fit: scale-down;
+    width: 100%;
+}
+
+/*overview cards*/
+.events .overview{
+    grid-area: brief;
+}
+.card.overview li{
+    font-size: 140%;
+    font-weight: 600;
+    line-height: 170%;
+}
+.card.overview .subtitle{
+    font-style: oblique;
+}
+
+/*lesson cards*/
+.events .lessons{
+    grid-area: lessons;
+}
+.events .files{
+    grid-area: files;
+}
+
+.events .photos{
+    grid-area: image;
+    padding: 0;
+}
+.card.photos ul {
+    margin: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    overflow-x: auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: xx-large;
+    font-weight: 900;
+}
+.card.photos ul li {
+    display: inline;
+    width: 150px;
+    height: 150px;
+
+}
+.card.photos img{
+    object-fit:contain;
+    width: 100%;
+    display: inline-block;
+    border-radius: 10px;
+}
+ 
+@media screen and (max-width:60rem) {
+    .event-container{
+        grid-template-areas: 
+        '. flyer flyer .'
+        'name name name name'
+        'brief brief brief brief'
+        'lessons lessons lessons lessons'
+        'files files files files'
+        'image image image image';
+    }
+}

@@ -1,0 +1,57 @@
+*{
+    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto, auto, auto, auto;
+    text-align: center;
+    font-family:'Open-Sans';
+  }
+  .news img{
+    max-width: 30vw;
+    max-height:30vw;
+    margin-top: 40px;
+}
+
+.EmailHeading{
+      text-align:center;
+      margin-top: 20px;
+      color:rgba(0,35,99,1);
+      font-weight:900;
+      font-size:30px;
+      font-family:'Open-Sans';
+}
+.EmailBody{
+    color:black;
+    text-align:center;
+    margin-top: 20px;
+}
+
+
+.EmailSignUp a{
+    display:grid;
+    float: left;
+    color:rgb(0, 0, 0);
+    margin-left:45vw;
+    margin-top:1vw;
+    font-size:15px;
+}
+
+.footer {
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    color:white;
+    background-color: rgb(7,38,100);
+    
+  }
+  @media screen and (max-width:40rem){
+    .footer{
+      flex-direction: column;
+    }
+  }
+  
