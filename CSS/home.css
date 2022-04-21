@@ -25,8 +25,30 @@ h2{
   justify-content: center;
 }
 
+/* Animation which causes an element to fade away*/
+@keyframes fadeOut{
+  from{opacity: 1;}
+  to {opacity: 0;}
+}
 
-.slogan .slogan-text {
+/*DRCV logo that goes over the slogan*/
+.logoOverlay{
+  z-index: 4;
+  background-image: url('/images/drcvlogo.jpg');
+  background-size: 100% 100%;
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  right: 0px;
+  top: 0px;
+  animation-name: fadeOut;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* the slogan which goes under the DRCV logo */
+.slogan-text {
   display: block;
   text-align: center;
   padding: 1rem 2.5rem;
@@ -35,6 +57,7 @@ h2{
   color: black;
   border: solid 4px rgb(160, 157, 157);
   box-shadow: 0 4px 8px 0 grey;
+  position:relative;
 }
 
 /*Event Bar*/
