@@ -45,6 +45,7 @@
   overflow: auto;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
   background-color: rgb(7,38,100); 
+  z-index: 7;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -154,7 +155,7 @@ header .a:hover {
 /* end content hide */
 
 /* media queries */
-@media (max-width:768px){
+@media (max-width:811px){
   .brand-logo{
     display:none; 
   }
@@ -173,7 +174,7 @@ header .a:hover {
     background-color: rgba(0, 0, 0, 0.233);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 811px) {
   .nav-search {
     position: static;
     width: auto;
@@ -187,7 +188,7 @@ header .a:hover {
     display: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 811px) {
   .nav {
     background-color: rgba(7, 38, 100, 0.918);
     display: inline-block;
@@ -254,7 +255,7 @@ footer#shoe .bi{
   padding-bottom: 0.625rem;
 }
 
-@media (max-width:768px) {
+@media (max-width:811px) {
   footer#shoe{
     flex-direction: column;
     align-content: center;
