@@ -47,6 +47,25 @@ h2{
   animation-fill-mode: forwards;
 }
 
+@media(max-width: 450px){
+
+  .slogan-text {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(201, 196, 196, 0.8);
+    color: black;
+    border: solid 4px rgb(160, 157, 157);
+    box-shadow: 0 4px 8px 0 grey;
+    position:relative;
+    Width: 260px;
+    height: 165px;
+  }
+
+}
+
+@media(min-width: 450px){
+
 /* the slogan which goes under the DRCV logo */
 .slogan-text {
   display: block;
@@ -58,25 +77,25 @@ h2{
   box-shadow: 0 4px 8px 0 grey;
   position:relative;
   Width: 600px;
-  min-width: 430px;
+
+}
+
 }
 
 /*Event Bar*/
 .events-txt {
   flex: 0 1 50%;
   margin: 10px;
-  font-size: 2vw;
+  font-size: 50vw;
   text-align:center; 
-
 }
 
 .events-link {
   flex: 0 2 50%;
   margin: 10px;
-  font-size: 2vw;
+  font-size: 3vw;
   color:blue;
   text-align: center; 
-  border-left: 2px solid white;
 }
 .events-link a{
   color: white;
@@ -87,6 +106,7 @@ h2{
   display:flex;
   color:white;
   background-color: rgb(7,38,100);
+  justify-content: center;
 }
 
 
