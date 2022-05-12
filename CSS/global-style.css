@@ -231,6 +231,14 @@ footer#shoe {
   justify-content: space-around;
 }
 
+.shoe-header{
+  width:100%;
+  text-align: center;
+  color:white;
+  font-size:x-large;
+
+}
+
 footer#shoe ul {
   list-style: none;
   padding-left: 0;
