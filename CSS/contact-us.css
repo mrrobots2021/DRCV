@@ -3,39 +3,70 @@ body {font-family: Arial, Helvetica, sans-serif;}
     box-sizing: border-box;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+/* ----------- My Form ----------- */
+.myform{
+	margin: 20px auto;
+	width:400px;
+	padding:14px;
 }
 
-input[type=submit] {
-  background-color: #ccc;
-  color: rgb(7,38,100);
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
-input[type=submit]:hover {
-  background-color: rgb(7,38,100);
-  
-}
-.section-title{
-    margin: 2rem 0;
-    text-align: center;
-    color: rgb(7,38,100);
-    font-weight: 500;
-}
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
+
+	/* ----------- stylized ----------- */
+	#stylized{
+		border:solid 2px #ffffff;
+		background:rgba(7, 38, 100, 0.922);
+
+	}
+	#stylized h1 {
+		font-size:14px;
+		font-weight:bold;
+		margin-bottom:8px;
+	}
+	#stylized p{
+		font-size:11px;
+		color:#ffffff;
+		margin-bottom:20px;
+		border-bottom:solid 1px #b7ddf2;
+		padding-bottom:10px;
+	}
+	#stylized label{
+		display:block;
+		font-weight:bold;
+		text-align:center;
+		width:140px;
+		float:left;
+    color:white;
+	}
+	#stylized .small{
+		color:#ffffff;
+		display:block;
+		font-size:11px;
+		font-weight:normal;
+		text-align:center;
+		width:140px;
+	}
+	#stylized input{
+		float:left;
+		font-size:12px;
+		padding:4px 2px;
+		border:solid 1px #aacfe4;
+		width:200px;
+		margin:2px 0 20px 10px;
+	}
+	#stylized button{ 
+		clear:both;
+		margin-left:160px;
+		width:125px;
+		height:31px;
+		background:#444;
+		text-align:center;
+		line-height:31px;
+		color:#FFFFFF;
+		font-size:11px;
+		font-weight:bold;
+    border:1px solid white; 
+	}
 
