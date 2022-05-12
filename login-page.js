@@ -18,3 +18,12 @@ loginButton.addEventListener("click", (e) => {
         loginErrorMsg.style.opacity = 1;
     }
 })
+
+
+const registerButton = document.getElementById("register-form-submit");
+// When the login button is clicked, the following code is executed
+registerButton.addEventListener("click", (e) => {
+
+        location.href = 'Register.html';
+   
+})
