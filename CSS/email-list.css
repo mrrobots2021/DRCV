@@ -30,13 +30,15 @@
 }
 
 
+
+
 .EmailSignUp a{
-    display:grid;
-    float: left;
-    color:rgb(0, 0, 0);
-    margin-left:45vw;
-    margin-top:1vw;
-    font-size:15px;
+    color:rgb(255, 255, 255);
+    font-size:20px;
+    padding:15px;
+    border-radius: 10px;
+    text-decoration: underline;
+    background-color: rgb(7,38,100)
 }
 
 .footer {
