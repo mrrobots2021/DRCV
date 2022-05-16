@@ -18,12 +18,17 @@ while($row = mysqli_fetch_array($records))
 <h3 class="subtitle">Fall/Spring Seminar <?php echo $row['event_date']; ?></h3>
 <hr/>
 <?php echo $row['event_overview']; ?>
+</div>
+<div class="card lessons">
+<h2>
+<b><i class="bi bi-journal-bookmark-fill" aria-label="journal"></i>Lessons Learned</b>
+</h2>
+<hr/>
 <ul>
 <?php echo $row['event_lessons']; ?>
 </ul>
 </div>
 </div>
-
 <?php 
 } 
 ?> 

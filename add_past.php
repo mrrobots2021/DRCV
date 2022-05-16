@@ -18,7 +18,7 @@
 </ul>
 <h4>⚠️Summary/Info⚠️</h4>
 </textarea>
-            <textarea name="event_lesson" class="add-event-field" id = "event-lesson" placeholder="lesson">
+            <textarea name="event_lessons" class="add-event-field" id = "event-lessons" placeholder="lesson">
 <li><h4>⚠️ImportantLesson⚠️</h4></li>
 <li><h4>⚠️ImportantLesson⚠️</h4></li>
 <li><h4>⚠️ImportantLesson⚠️</h4></li>
