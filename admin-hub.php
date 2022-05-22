@@ -1,3 +1,18 @@
+
+<?php
+session_start();
+
+if(!isset($_SESSION["loggedIn"]) || !$_SESSION["loggedIn"] || !$_SESSION['isadmin']){
+
+    ob_start();
+    header("Location: home.html");
+    ob_end_flush();
+    die();
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +30,11 @@
     <h1>
         <a href="Register.html">
             Add New Members
+        </a>
+    </h1>
+    <h1>
+        <a href="members-only.php">
+            Members Only Page
         </a>
     </h1>
     <h1>

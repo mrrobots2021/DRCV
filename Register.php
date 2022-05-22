@@ -1,5 +1,16 @@
 <?php
 
+session_start();
+
+if(!isset($_SESSION["loggedIn"]) || !$_SESSION["loggedIn"] || !$_SESSION['isadmin']){
+
+    ob_start();
+    header("Location: home.html");
+    ob_end_flush();
+    die();
+
+}
+
 //connecting to database
 require_once('sql_conn.php');
         $user_password = password_hash($_POST["user_password"], PASSWORD_DEFAULT);
