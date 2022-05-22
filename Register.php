@@ -6,7 +6,11 @@ require_once('sql_conn.php');
         $username = mysqli_real_escape_string($dbc,$_POST["username"]);
         $fname = mysqli_real_escape_string($dbc, $_POST["fname"]);
         $lname = mysqli_real_escape_string($dbc,$_POST["lname"]);
-        
+        //DO NOT PUT THE BELOW 2 VARIABLES IN THE DATABASE
+        $text_password = mysqli_real_escape_string($dbc, $_POST["user_password"]);
+        $password_confirm = mysqli_real_escape_string($dbc, $_POST["confirm_password"]);
+        $isadmin = $_POST["is_admin"];
+
         //where username = 
         //does my password verfiy with what is stored 
         //https://www.php.net/manual/en/function.password-verify
@@ -27,21 +31,38 @@ require_once('sql_conn.php');
         //puts values in database 
         //delcare query 
 
-        
-        $sql = "INSERT INTO members (username, user_password, fname, lname)
-        VALUES ('$username', '$user_password', '$fname', '$lname');";
-        
-        //ties dbc with sql query 
-        //otherwise won't send 
-        $response = @mysqli_query($dbc, $sql);
+        //if the user failed to type the same password twice
+        if(strcmp($password_confirm, $text_password) != 0){
+          echo "<br/>"; 
+            echo "Passwords do not match";
+        }else{
 
-        if ($response) {
-        echo "<br/>"; 
-          echo "New record created successfully";
-        } else {
-          echo "Error: " . $sql . "<br>" . $conn->error;
+          if($isadmin == "true"){
+
+            $access = True;
+
+          }else if($isadmin =="false"){
+            $access = False;
+          }else{
+            echo "unexpected behavior";
+          }
+
+          $sql = "INSERT INTO members (username, user_password, fname, lname, isadmin)
+          VALUES ('$username', '$user_password', '$fname', '$lname', '$access');";
+            
+          //ties dbc with sql query
+          //otherwise won't send
+          $response = @mysqli_query($dbc, $sql);
+    
+          if ($response) {
+          echo "<br/>"; 
+            echo "New record created successfully";
+          } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+          }
+
         }
-
+        
         //closes the database connection
         mysqli_close($dbc)
        

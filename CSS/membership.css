@@ -11,10 +11,8 @@
   }
 
   #main-holder {
-    box-sizing: border-box;
     background-color: rgb(7,38,100);
     display: flex;
-    width: 375px;
     display: grid;
     justify-items: center;
     /*background-color: rgb(251, 252, 241);*/
@@ -28,7 +26,6 @@
     background-color: white;
     border-radius: 7px;
     padding: 10px;
-   margin-bottom: 20px;
   }
 
   #login-form {
@@ -62,8 +59,4 @@
     background-color: lightgrey;
     cursor: pointer;
     outline: none;
-  }
-
-  h3 {
-    text-align: center;
   }
