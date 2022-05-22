@@ -12,7 +12,7 @@
 <form action="remove-members.php" method="post">
 <h1><p align ='center'><u>ENTER DETAILS</u></p></h1><br><br>
 <h3>
-    <a href="admin-hub.html" style="display: block;">
+    <a href="admin-hub.php" style="display: block;">
         Return to the Admin Hub
     </a>
 <h3>
