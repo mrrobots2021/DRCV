@@ -10,7 +10,7 @@
     <link href="CSS/global-style.css" rel="stylesheet" type="text/css" />
     <link href="CSS/membership.css" rel="stylesheet"/>
     <link rel="icon" type="image/x-icon" href="images/drcvlogo.jpg">
-  </head>
+  
   <style>
     /* unvisited link */
 a:link {
@@ -26,6 +26,8 @@ a:active{
   color:white;
 }
   </style>
+
+</head>
   <body>
 
     <header class="header">
@@ -72,17 +74,22 @@ a:active{
     </header>
     <script src="script.js"></script>
     <!--End Nav Bar-->
+
     <div class="loginContainer" loginBoxContainer>
       <div id="main-holder">
         <h3 id="login-header">Register New Member</h3>
-   
-        <form id="login-form" action="Register.php" method="POST">
+          <form id="login-form" action="Register.php" method="POST">
             <input type="fname" name="fname" class="login-form-field" placeholder="First Name">
            <input type="lname" name="lname" class="login-form-field" placeholder="Last Name">
            <input type="text" name="username" class="login-form-field" placeholder="Username">
-          <input type="user_password" name="user_password" class="login-form-field" placeholder="Password">
+          <input type="password" name="user_password" class="login-form-field" placeholder="Password">
+          <input type="password" name="confirm_password" class="login-form-field" placeholder="Confirm Password">
+          <input type="radio" id="admin_true" name="is_admin" value="true" class="login-form-field" placeholder="User Is an Admin">
+          <label for="admin_true" style="color:white"> User is an admin </label>
+          <input type="radio" id="admin_false" name="is_admin" value="false" class="login-form-field" placeholder="User Is Not an Admin" checked>
+          <label for="admin_false" style="color:white"> User is not an admin </label>
           <input type="submit" value="Register" id="login-form-submit">
-          <a href="membership.html">Already Registered? Login Here!</a>
+          <a href="admin-hub.php">Return to the admin hub</a>
         </form>
       </div>
     </div>

@@ -1,0 +1,173 @@
+[09-May-2022 21:23:42 America/Chicago] PHP Warning:  password_hash() expects at least 2 parameters, 1 given in /home1/drcv2012/public_html/Register.php on line 5
+[09-May-2022 21:24:55 America/Chicago] PHP Warning:  password_hash() expects at least 2 parameters, 1 given in /home1/drcv2012/public_html/Register.php on line 5
+[12-May-2022 23:54:58 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home1/drcv2012/public_html/past_event_trial.php:74
+Stack trace:
+#0 {main}
+  thrown in /home1/drcv2012/public_html/past_event_trial.php on line 74
+[13-May-2022 00:00:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home1/drcv2012/public_html/past_event_trial.php:73
+Stack trace:
+#0 {main}
+  thrown in /home1/drcv2012/public_html/past_event_trial.php on line 73
+[15-May-2022 01:19:24 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 71
+[15-May-2022 01:19:24 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 73
+[15-May-2022 01:19:24 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 98
+[15-May-2022 01:19:33 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 71
+[15-May-2022 01:19:33 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 73
+[15-May-2022 01:19:33 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 98
+[15-May-2022 01:19:39 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 71
+[15-May-2022 01:19:39 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 73
+[15-May-2022 01:19:39 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 98
+[15-May-2022 01:30:28 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 71
+[15-May-2022 01:30:28 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 73
+[15-May-2022 01:30:28 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 98
+[15-May-2022 01:30:43 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 71
+[15-May-2022 01:30:43 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 73
+[15-May-2022 01:30:43 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 98
+[15-May-2022 01:36:17 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 71
+[15-May-2022 01:36:17 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 73
+[15-May-2022 01:36:17 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 98
+[15-May-2022 01:37:26 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 71
+[15-May-2022 01:37:26 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 73
+[15-May-2022 01:37:26 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 98
+[15-May-2022 01:53:47 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 71
+[15-May-2022 01:53:47 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 73
+[15-May-2022 01:53:47 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 98
+[15-May-2022 01:58:30 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 71
+[15-May-2022 01:58:30 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 73
+[15-May-2022 01:58:30 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 98
+[15-May-2022 01:59:37 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 71
+[15-May-2022 01:59:37 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 73
+[15-May-2022 01:59:37 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 98
+[15-May-2022 02:12:25 America/Chicago] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE), expecting ';' or ',' in /home1/drcv2012/public_html/past_event_trial.php on line 71
+[15-May-2022 02:12:27 America/Chicago] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE), expecting ';' or ',' in /home1/drcv2012/public_html/past_event_trial.php on line 71
+[15-May-2022 02:43:44 America/Chicago] PHP Warning:  Use of undefined constant ‘John’ - assumed '‘John’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 02:43:44 America/Chicago] PHP Warning:  Use of undefined constant ‘Michelle’ - assumed '‘Michelle’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 02:43:44 America/Chicago] PHP Warning:  Use of undefined constant ‘Mari’ - assumed '‘Mari’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 02:43:44 America/Chicago] PHP Warning:  Use of undefined constant ‘Luke’ - assumed '‘Luke’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 02:43:44 America/Chicago] PHP Warning:  Use of undefined constant ‘Nellie’ - assumed '‘Nellie’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 03:15:26 America/Chicago] PHP Warning:  Use of undefined constant ‘John’ - assumed '‘John’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 03:15:26 America/Chicago] PHP Warning:  Use of undefined constant ‘Michelle’ - assumed '‘Michelle’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 03:15:26 America/Chicago] PHP Warning:  Use of undefined constant ‘Mari’ - assumed '‘Mari’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 03:15:26 America/Chicago] PHP Warning:  Use of undefined constant ‘Luke’ - assumed '‘Luke’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 03:15:26 America/Chicago] PHP Warning:  Use of undefined constant ‘Nellie’ - assumed '‘Nellie’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 03:21:28 America/Chicago] PHP Warning:  Use of undefined constant ‘John’ - assumed '‘John’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 03:21:28 America/Chicago] PHP Warning:  Use of undefined constant ‘Michelle’ - assumed '‘Michelle’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 03:21:28 America/Chicago] PHP Warning:  Use of undefined constant ‘Mari’ - assumed '‘Mari’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 03:21:28 America/Chicago] PHP Warning:  Use of undefined constant ‘Luke’ - assumed '‘Luke’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 03:21:28 America/Chicago] PHP Warning:  Use of undefined constant ‘Nellie’ - assumed '‘Nellie’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 9
+[15-May-2022 15:53:33 America/Chicago] PHP Warning:  Use of undefined constant ‘John’ - assumed '‘John’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 8
+[15-May-2022 15:53:33 America/Chicago] PHP Warning:  Use of undefined constant ‘Michelle’ - assumed '‘Michelle’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 8
+[15-May-2022 15:53:33 America/Chicago] PHP Warning:  Use of undefined constant ‘Mari’ - assumed '‘Mari’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 8
+[15-May-2022 15:53:33 America/Chicago] PHP Warning:  Use of undefined constant ‘Luke’ - assumed '‘Luke’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 8
+[15-May-2022 15:53:33 America/Chicago] PHP Warning:  Use of undefined constant ‘Nellie’ - assumed '‘Nellie’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 8
+[15-May-2022 17:53:19 America/Chicago] PHP Warning:  include(dbConn.php): failed to open stream: No such file or directory in /home1/drcv2012/public_html/past_event_trial.php on line 14
+[15-May-2022 17:53:19 America/Chicago] PHP Warning:  include(dbConn.php): failed to open stream: No such file or directory in /home1/drcv2012/public_html/past_event_trial.php on line 14
+[15-May-2022 17:53:19 America/Chicago] PHP Warning:  include(): Failed opening 'dbConn.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/drcv2012/public_html/past_event_trial.php on line 14
+[15-May-2022 17:53:19 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 16
+[15-May-2022 17:53:19 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 18
+[15-May-2022 17:53:19 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 32
+[15-May-2022 17:54:42 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 16
+[15-May-2022 17:54:42 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 18
+[15-May-2022 17:54:42 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 32
+[15-May-2022 17:56:56 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 15
+[15-May-2022 17:56:56 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 17
+[15-May-2022 17:56:56 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 30
+[15-May-2022 17:58:43 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 10
+[15-May-2022 17:58:43 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 12
+[15-May-2022 17:58:43 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 25
+[15-May-2022 18:12:32 America/Chicago] PHP Warning:  Use of undefined constant ‘John’ - assumed '‘John’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 11
+[15-May-2022 18:12:32 America/Chicago] PHP Warning:  Use of undefined constant ‘Michelle’ - assumed '‘Michelle’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 11
+[15-May-2022 18:12:32 America/Chicago] PHP Warning:  Use of undefined constant ‘Mari’ - assumed '‘Mari’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 11
+[15-May-2022 18:12:32 America/Chicago] PHP Warning:  Use of undefined constant ‘Luke’ - assumed '‘Luke’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 11
+[15-May-2022 18:12:32 America/Chicago] PHP Warning:  Use of undefined constant ‘Nellie’ - assumed '‘Nellie’' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/past_event_trial.php on line 11
+[15-May-2022 18:21:58 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 10
+[15-May-2022 18:21:58 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home1/drcv2012/public_html/past_event_trial.php on line 12
+[15-May-2022 18:21:58 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home1/drcv2012/public_html/past_event_trial.php on line 31
+[16-May-2022 16:45:34 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/drcv2012/public_html/past_event_trial.php on line 11
+[18-May-2022 23:57:24 America/Chicago] PHP Warning:  require_once(dbConfig.php): failed to open stream: No such file or directory in /home1/drcv2012/public_html/add_past_event.php on line 3
+[18-May-2022 23:57:24 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'dbConfig.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/drcv2012/public_html/add_past_event.php on line 3
+[18-May-2022 23:57:51 America/Chicago] PHP Warning:  require_once(dbConfig.php): failed to open stream: No such file or directory in /home1/drcv2012/public_html/add_past_event.php on line 3
+[18-May-2022 23:57:51 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'dbConfig.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/drcv2012/public_html/add_past_event.php on line 3
+[19-May-2022 00:28:57 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home1/drcv2012/public_html/add_past_event.php on line 37
+[19-May-2022 00:33:13 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home1/drcv2012/public_html/add_past_event.php on line 37
+[19-May-2022 00:46:00 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home1/drcv2012/public_html/add_past_event.php on line 37
+[19-May-2022 01:17:57 America/Chicago] PHP Warning:  Use of undefined constant sql_conn - assumed 'sql_conn' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/add_past_event.php on line 2
+[19-May-2022 01:17:57 America/Chicago] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/add_past_event.php on line 2
+[19-May-2022 01:17:57 America/Chicago] PHP Warning:  require_once(sql_connphp): failed to open stream: No such file or directory in /home1/drcv2012/public_html/add_past_event.php on line 2
+[19-May-2022 01:17:57 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'sql_connphp' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/drcv2012/public_html/add_past_event.php on line 2
+[19-May-2022 01:19:23 America/Chicago] PHP Warning:  Use of undefined constant sql_conn - assumed 'sql_conn' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/add_past_event.php on line 2
+[19-May-2022 01:19:23 America/Chicago] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home1/drcv2012/public_html/add_past_event.php on line 2
+[19-May-2022 01:19:23 America/Chicago] PHP Warning:  require_once(sql_connphp): failed to open stream: No such file or directory in /home1/drcv2012/public_html/add_past_event.php on line 2
+[19-May-2022 01:19:23 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'sql_connphp' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/drcv2012/public_html/add_past_event.php on line 2
+[21-May-2022 15:27:06 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ';' or ',' in /home1/drcv2012/public_html/Register.php on line 34
+[21-May-2022 15:29:14 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ';' or ',' in /home1/drcv2012/public_html/Register.php on line 34
+[21-May-2022 15:39:45 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/Register.php on line 10
+[21-May-2022 15:39:45 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/Register.php on line 11
+[21-May-2022 15:40:03 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/Register.php on line 10
+[21-May-2022 15:40:03 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/Register.php on line 11
+[21-May-2022 15:40:13 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/Register.php on line 10
+[21-May-2022 15:40:13 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/Register.php on line 11
+[21-May-2022 15:41:18 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/Register.php on line 10
+[21-May-2022 15:41:18 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/Register.php on line 11
+[21-May-2022 15:41:54 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/Register.php on line 10
+[21-May-2022 15:41:54 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/Register.php on line 11
+[21-May-2022 15:43:01 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/Register.php on line 10
+[21-May-2022 15:43:01 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/Register.php on line 11
+[21-May-2022 15:43:57 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 3 given in /home1/drcv2012/public_html/Register.php on line 10
+[21-May-2022 15:43:57 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 3 given in /home1/drcv2012/public_html/Register.php on line 11
+[21-May-2022 15:47:44 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 3 given in /home1/drcv2012/public_html/Register.php on line 10
+[21-May-2022 15:47:44 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 3 given in /home1/drcv2012/public_html/Register.php on line 11
+[21-May-2022 16:39:30 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ';' or ',' in /home1/drcv2012/public_html/Register.php on line 48
+[21-May-2022 16:39:59 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ';' or ',' in /home1/drcv2012/public_html/Register.php on line 48
+[21-May-2022 16:40:43 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ';' or ',' in /home1/drcv2012/public_html/Register.php on line 48
+[21-May-2022 16:42:17 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ';' or ',' in /home1/drcv2012/public_html/Register.php on line 48
+[22-May-2022 13:22:55 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home1/drcv2012/public_html/login.php on line 34
+[22-May-2022 13:23:15 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home1/drcv2012/public_html/login.php on line 34
+[22-May-2022 13:26:32 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home1/drcv2012/public_html/login.php on line 34
+[22-May-2022 13:41:04 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home1/drcv2012/public_html/login.php on line 34
+[22-May-2022 13:41:09 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home1/drcv2012/public_html/login.php on line 34
+[22-May-2022 13:43:48 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home1/drcv2012/public_html/login.php on line 76
+[22-May-2022 13:44:44 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/drcv2012/public_html/login.php on line 57
+[22-May-2022 14:12:42 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/login.php on line 5
+[22-May-2022 14:12:49 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/login.php on line 5
+[22-May-2022 14:13:20 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, string given in /home1/drcv2012/public_html/login.php on line 5
+[22-May-2022 14:13:20 America/Chicago] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home1/drcv2012/public_html/login.php on line 6
+[22-May-2022 14:22:22 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/drcv2012/public_html/login.php:58) in /home1/drcv2012/public_html/login.php on line 80
+[22-May-2022 14:23:34 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/drcv2012/public_html/login.php:58) in /home1/drcv2012/public_html/login.php on line 80
+[22-May-2022 14:23:46 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/drcv2012/public_html/login.php:58) in /home1/drcv2012/public_html/login.php on line 80
+[22-May-2022 14:42:42 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/drcv2012/public_html/login.php:58) in /home1/drcv2012/public_html/login.php on line 82
+[22-May-2022 15:00:35 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home1/drcv2012/public_html/add_past_event.php on line 66
+[22-May-2022 15:01:58 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home1/drcv2012/public_html/add_past_event.php on line 66
+[22-May-2022 15:16:52 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home1/drcv2012/public_html/add_past_event.php on line 66
+[22-May-2022 15:21:32 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home1/drcv2012/public_html/add_past_event.php on line 27
+[22-May-2022 15:22:05 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home1/drcv2012/public_html/add_past_event.php on line 27
+[22-May-2022 15:22:50 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/drcv2012/public_html/past_event_trial.php on line 12
+[22-May-2022 15:23:02 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/drcv2012/public_html/past_event_trial.php on line 12
+[22-May-2022 15:23:07 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home1/drcv2012/public_html/past_event_trial.php on line 12
+[22-May-2022 16:11:59 America/Chicago] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/drcv2012/public_html/admin-hub.php on line 4
+[22-May-2022 16:11:59 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/drcv2012/public_html/admin-hub.php:1) in /home1/drcv2012/public_html/admin-hub.php on line 10
+[22-May-2022 16:13:21 America/Chicago] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/drcv2012/public_html/admin-hub.php on line 3
+[22-May-2022 16:13:21 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/drcv2012/public_html/admin-hub.php:1) in /home1/drcv2012/public_html/admin-hub.php on line 8
+[22-May-2022 16:13:25 America/Chicago] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/drcv2012/public_html/admin-hub.php on line 3
+[22-May-2022 16:13:25 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/drcv2012/public_html/admin-hub.php:1) in /home1/drcv2012/public_html/admin-hub.php on line 8
+[22-May-2022 16:14:15 America/Chicago] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/drcv2012/public_html/admin-hub.php on line 3
+[22-May-2022 16:14:15 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/drcv2012/public_html/admin-hub.php:1) in /home1/drcv2012/public_html/admin-hub.php on line 8
+[22-May-2022 16:14:18 America/Chicago] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/drcv2012/public_html/admin-hub.php on line 3
+[22-May-2022 16:14:18 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/drcv2012/public_html/admin-hub.php:1) in /home1/drcv2012/public_html/admin-hub.php on line 8
+[22-May-2022 16:38:18 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home1/drcv2012/public_html/add_past_event.php on line 27
+[22-May-2022 16:52:54 America/Chicago] PHP Warning:  move_uploaded_file(uploads/fall2017flyer.jpg): failed to open stream: No such file or directory in /home1/drcv2012/public_html/add_past_event.php on line 24
+[22-May-2022 16:52:54 America/Chicago] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpTFz0Pk' to 'uploads/fall2017flyer.jpg' in /home1/drcv2012/public_html/add_past_event.php on line 24
+[22-May-2022 18:07:14 America/Chicago] PHP Warning:  require_once(recaptchalib.php): failed to open stream: No such file or directory in /home1/drcv2012/public_html/login.php on line 9
+[22-May-2022 18:07:14 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'recaptchalib.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/drcv2012/public_html/login.php on line 9
+[22-May-2022 18:07:20 America/Chicago] PHP Warning:  require_once(recaptchalib.php): failed to open stream: No such file or directory in /home1/drcv2012/public_html/login.php on line 9
+[22-May-2022 18:07:20 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'recaptchalib.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/drcv2012/public_html/login.php on line 9
+[22-May-2022 18:19:50 America/Chicago] PHP Warning:  move_uploaded_file(uploads/fall2017flyer.jpg): failed to open stream: No such file or directory in /home1/drcv2012/public_html/add_past_event.php on line 24
+[22-May-2022 18:19:50 America/Chicago] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpKouMSL' to 'uploads/fall2017flyer.jpg' in /home1/drcv2012/public_html/add_past_event.php on line 24
+[22-May-2022 18:20:46 America/Chicago] PHP Warning:  move_uploaded_file(uploads/fall2017flyer.jpg): failed to open stream: No such file or directory in /home1/drcv2012/public_html/add_past_event.php on line 24
+[22-May-2022 18:20:46 America/Chicago] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpKRxXa3' to 'uploads/fall2017flyer.jpg' in /home1/drcv2012/public_html/add_past_event.php on line 24
+[22-May-2022 19:19:09 America/Chicago] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home1/drcv2012/public_html/logout.php on line 4
+[22-May-2022 19:19:21 America/Chicago] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home1/drcv2012/public_html/logout.php on line 4
+[22-May-2022 19:23:11 America/Chicago] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/drcv2012/public_html/admin-hub.php on line 3
+[22-May-2022 19:23:11 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/drcv2012/public_html/admin-hub.php:1) in /home1/drcv2012/public_html/admin-hub.php on line 8
+[22-May-2022 19:44:06 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in /home1/drcv2012/public_html/add_past_event.php on line 31
+[22-May-2022 19:46:24 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home1/drcv2012/public_html/add_past_event.php on line 31

@@ -11,22 +11,24 @@
     <link href="CSS/membership.css" rel="stylesheet"/>
     <script src="login-page.js"></script>
     <link rel="icon" type="image/x-icon" href="images/drcvlogo.jpg">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+      /* unvisited link */
+  a:link {
+    color: rgb(251, 249, 249);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(255, 255, 255);
+  }
+  
+  a:active{
+    color:white;
+  }
+    </style>
   </head>
-  <style>
-    /* unvisited link */
-a:link {
-  color: rgb(251, 249, 249);
-}
-
-/* visited link */
-a:visited {
-  color: rgb(255, 255, 255);
-}
-
-a:active{
-  color:white;
-}
-  </style>
+  
   <body>
 
     <header class="header">
@@ -79,13 +81,11 @@ a:active{
       <div id="main-holder">
         <h3 id="login-header">Member Login</h3>
    
-        <form id="login-form">
-          
+        <form id="login-form" action="login.php" method="POST">
           <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
           <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+          <div class="g-recaptcha" data-sitekey="6Lfq7gEgAAAAAPZxDtux555JBl-X7dHG4jAlNkPh"></div>
           <input type="submit" value="Login" id="login-form-submit">
-        
-          <a href="Register.html">New user? Register here!</a>
         </form>
       </div>
     </div>

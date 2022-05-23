@@ -4,7 +4,6 @@
   
 
   .grid-container{
-    display: grid;
     grid-template-columns: auto, auto, auto, auto;
     text-align: center;
     font-family:'Open-Sans';
@@ -29,16 +28,13 @@
     margin-top: 20px;
 }
 
-
-
-
 .EmailSignUp a{
     color:rgb(255, 255, 255);
     font-size:20px;
     padding:15px;
     border-radius: 10px;
     text-decoration: underline;
-    background-color: rgb(7,38,100)
+    background-color: rgb(7,38,100);
 }
 
 .footer {

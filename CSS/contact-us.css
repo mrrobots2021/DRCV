@@ -3,8 +3,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     box-sizing: border-box;
 }
 
-p, h1, form, button{border:0; margin:0; padding:0;}
-.spacer{clear:both; height:1px;}
+
 /* ----------- My Form ----------- */
 .myform{
 	margin: 20px auto;
@@ -15,24 +14,24 @@ p, h1, form, button{border:0; margin:0; padding:0;}
 
 
 	/* ----------- stylized ----------- */
-	#stylized{
+	.myform{
 		border:solid 2px #ffffff;
 		background:rgba(7, 38, 100, 0.922);
 
 	}
-	#stylized h1 {
+	h1 {
 		font-size:14px;
 		font-weight:bold;
 		margin-bottom:8px;
 	}
-	#stylized p{
+	p{
 		font-size:11px;
 		color:#ffffff;
 		margin-bottom:20px;
 		border-bottom:solid 1px #b7ddf2;
 		padding-bottom:10px;
 	}
-	#stylized label{
+	label{
 		display:block;
 		font-weight:bold;
 		text-align:center;
@@ -40,7 +39,7 @@ p, h1, form, button{border:0; margin:0; padding:0;}
 		float:left;
     color:white;
 	}
-	#stylized .small{
+	.myform .small{
 		color:#ffffff;
 		display:block;
 		font-size:11px;
@@ -48,7 +47,7 @@ p, h1, form, button{border:0; margin:0; padding:0;}
 		text-align:center;
 		width:140px;
 	}
-	#stylized input{
+	.myform input{
 		float:left;
 		font-size:12px;
 		padding:4px 2px;
@@ -56,7 +55,7 @@ p, h1, form, button{border:0; margin:0; padding:0;}
 		width:200px;
 		margin:2px 0 20px 10px;
 	}
-	#stylized button{ 
+	.myform button{ 
 		clear:both;
 		margin-left:160px;
 		width:125px;
