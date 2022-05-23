@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 
@@ -37,11 +36,9 @@ if(!isset($_SESSION["loggedIn"]) || !$_SESSION["loggedIn"] || !$_SESSION['isadmi
             Members Only Page
         </a>
     </h1>
-    <h1>
-        <a href="home.html">
-            Return to the Main Website
-        </a>
-    </h1>
+    <form action="logout.php">
+            <input type="submit" value="logout"> </input>
+    </form>
 
     
 </body>

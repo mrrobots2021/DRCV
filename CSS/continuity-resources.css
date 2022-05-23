@@ -1,18 +1,12 @@
-/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
-/*       elements ▼ ▼ ▼
-/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
 
 * {
   font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
-
-/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
-/*       elements ▲ ▲ ▲           classes ▼ ▼ ▼
-/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
-
-
+.card.overview{
+  font-size: 130%;
+  font-weight: 600;
+  
+}
 
 .header-box {
   display: flex;
@@ -36,25 +30,58 @@
   box-shadow: 0 4px 8px 0 grey;
 }
 
-a.center-text{
-  margin-bottom: 2rem;
-  font-size: 1.4rem;
-  text-decoration: underline;
+
+.overview{
+  line-height: 2rem;
+  font-size: 10;
+  font-size: 135%;
 }
-.card#general{grid-area: general;}
-.card#hazards{grid-area: hazard;}
-.card#violence{grid-area: violence;}
-.card#flu{grid-area: flu;}
-.card#other{grid-area: other;}
+.page{
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: rgba(14, 13, 13, 0.947); 
+}
+.link b{
+  color:black
+}
+.hide {
+  display: none;
+  font-weight: 700;
+  font-size: 130%;
+}
+.card a:hover + span{
+  display: inline;
+  color: #4287f5;
+  text-decoration: underline;
+
+  
+}
+.card a:hover{
+  font-size: 140%;
+}
+.center{
+  text-align:  center;
+  
+}
+
+#about{grid-area: about;}
+#template{grid-area: template;}
+#general{grid-area: general;}
+#hazards{grid-area: hazard;}
+#violence{grid-area: violence;}
+#flu{grid-area: flu;}
+#other{grid-area: other;}
 
 .grid-container {
   margin: 1rem 1rem 0;
   display: grid;
   grid-template-areas: 
-  'general general flu flu'
-  'general general hazard hazard'
-  'general general violence violence'
-  'general general other other';
+  'about about about about'
+  'template template general general'
+  'template template flu flu'
+  'template template hazard hazard'
+  'template template violence violence'
+  'template template other other ';
 }
 
 .card {
@@ -62,9 +89,13 @@ a.center-text{
   margin: 1rem;
   border: solid 1px rgb(7,38,100);
   border-radius: 10px;
-  padding: .5rem 1rem 1rem 1rem;
+  padding: 1rem 0.5rem 1rem 1rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
 
+}
+.section-title{
+  font-size: 1.6rem;
 }
 
 
@@ -79,10 +110,13 @@ a.center-text{
 /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
 /*       pseudoclasses ▲ ▲ ▲           responsive design ▼ ▼ ▼
 /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
-
+ 
 @media screen and (max-width: 1280px) {
   .grid-container {
     grid-template-areas: 
+    'about about about about'
+    'template template template template'
+    'template template template template'
     'general general general general'
     'general general general general'
     'flu flu hazard hazard'
@@ -91,7 +125,9 @@ a.center-text{
 }
 @media screen and (max-width: 800px) {
   .grid-container {
-    grid-template-areas: 
+    grid-template-areas:
+    'about about' 
+    'template template'
     'general general'
     'general general'
     'flu flu' 
@@ -99,4 +135,4 @@ a.center-text{
     'violence violence' 
     'other other';
   }
-}
+} 
